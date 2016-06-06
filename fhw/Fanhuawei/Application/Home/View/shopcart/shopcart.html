@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>购物车华为商城</title>
+<link href="__PUBLIC__/css/ec.core.min.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/main.min.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/header.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/layer/2.1/layer.js"></script>
+</head>
+
+<body class="wide sc">
+<include file="public/header" />
+
+<div class="layout" style="margin-top:50px;">
+    <!-- 20131223-购物车-start -->
+    <div class="sc-list">
+    	<!-- 20131223-购物车-商品列表-start -->
+    	<div class="sc-pro-list">
+
+            <!-- 20131223-订单-商品-标题-start -->
+            <div class="sc-pro-title-area">
+                <div class="h">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th class="tr-check">
+                                	<input id="checkAll-top" type="checkbox" class="vam" autocomplete="off" checked="" disabled="">
+                                </th>
+                                <th class="tr-pro">商品</th>
+                                <th class="tr-price">单价<em>（元）</em></th>
+                                <th class="tr-quantity">数量</th>
+                                <th class="tr-subtotal">小计<em>（元）</em></th>
+                                <th class="tr-operate">操作</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+            <!-- 20131223-订单-商品-标题-end -->
+		<form action="{:U('addorder/index')}" id="cart-form" autocomplete="off" method="post">
+		<input type="hidden" name="state" value="1">
+		<span id="cart-list">
+		<!--product-list start-->
+		<div class="sc-pro-area selected" id="order-pro-7443">
+		<table id="goodslist" border="0" cellpadding="0" cellspacing="0">
+		<foreach name="goodslist" item="v">
+		<tbody>
+		<tr class="sc-pro-item">
+		<td rowspan="2" class="tr-check">
+		<input id="box-7443" class="checkbox" type="checkbox" name="skuIds" value="{$v.id}" data-type="1">
+		</td>
+		<td class="tr-pro">
+		<div class="pro-area clearfix">
+		<p class="p-img">
+		<a title="{$v.goodsname}" target="_blank" href="{:U('detail/particulars',array('goods_id'=>$v['id']))}" seed="cart-item-name">
+		<img alt="{$v.goodsname}" src="__PUBLIC__/{$v.image1}">
+		</a>
+		</p>
+		<p class="p-name">
+		<a title="{$v.goodsname}" target="_blank" href="{:U('detail/particulars',array('goods_id'=>$v['id']))}" seed="cart-item-name">{$v.goodsname}</a></p>
+		<p class="p-sku"><em>样式：{$v.style}</em></p><p class="understock-7443 hide"></p></div></td><td class="tr-price unitprice"><span>{$v.price}</span></td>
+
+		<td id="tr-num" class="tr-quantity" rowspan="2">
+		<div class="sc-stock-area"><div class="stock-area"><a href="javascript:;" class="icon-minus-3 vam numreduce" title="减">-</a><input id="quantity-7443" type="text" class="shop-quantity textbox vam" value="{$v.num}" data-skuid="7443" data-type="1" seed="cart-item-num" onkeyup='this.value=this.value.replace(/\D/gi,"")'><a href="javascript:;" class="icon-plus-3 vam numadd" title="加">+</a></div><p class="normalLimitstock-7443 hide"></p></div>
+		</td>
+		
+		<td rowspan="2" class="tr-subtotal"><b>{$v.subtotal}</b></td><td rowspan="2" class="tr-operate"><a href="javascript:;" class="scdel"> 删除</a></td><input type="hidden" name="stock" value="{$v.stock}"></tr></tbody>
+		</foreach>
+		</table></div>
+		
+		<!--product-list end-->
+		</span></div>
+		<div class="hr-20"></div>
+		<div id="cart-total-area" class="sc-total-area clearfix"><div class="sc-total-control"><input id="checkAll-buttom" type="checkbox" name="" class="vam" autocomplete="off"><label class="vam" for="checkAll-buttom">全选</label><a class="vam" href="javascript:;" id="cart-all-del">删除选中商品</a></div><div class="sc-total-price"><table border="0" cellpadding="0" cellspacing="0"><tbody>
+		<tr><th>总计金额：</th><td><b>¥</b><b id="sc-cartInfo-totalOriginalPrice">0</b></td></tr><tr><th>共节省：</th><td id="sc-cartInfo-minusPrice">¥0.00</td></tr><tr><th><em>合计(不含运费)：<em></em></em></th><td><b>¥</b><b id="sc-cartInfo-totalPrice">0</b></td></tr></tbody></table></div></div>
+		<div class="hr-25"></div>
+		<div id="cart-action-area" class="sc-action-area clearfix"><a class="button-style-4 button-go-shopping-3" href="{:U('search/search')}" style="margin-right:20px;">继续购物</a><button class="button-style-1 button-go-checkout-2" id="cart-pay">去结算</button><div class="sc-action-tips hide" id="sc-action-tips"><div class="tips-style-1 tips-area"><i></i><div class="tips-text"><p id="tips-text-p">购物车中有库存不足商品，请处理后结算</p></div><s></s></div></div></div><input type="hidden" name="sid"><input type="hidden" name="totalprice"></form>
+		<!--购物车-商品列表 end -->
+
+		<!--购物车-空数据 --> 
+        <div id="cart-empty-msg" class="sc-empty-area hide">
+            亲，您购物车里还没有物品哦，快去逛逛吧！
+        </div>
+        <!-- 购物车列表 End-->
+    </div>
+    <div class="hr-35"></div>
+
+<div class="hr-25"></div>
+
+
+<!-- 购物车主体 End　-->
+</div>
+<div class="hr-75"></div>
+
+
+
+
+<!--口号-20121025 -->
+<include file="public/footer" />
+</body></html>
+<script>
+// console.log($('#goodslist').find('tbody').length );
+		if($('#goodslist').find('tbody').length == 0){
+			$('#cart-empty-msg').removeClass('hide');
+			$('#cart-total-area').addClass('hide');
+			$('#cart-action-area').addClass('hide');
+		}
+</script>
+<script>
+
+    // 全选反选
+    $("#checkAll-buttom").click(function(){
+        if($(this).prop("checked")){
+            $(".checkbox").each(function(){
+                $(this).prop("checked",true);
+            });
+            totalmoney();
+        }else{
+           $(".checkbox").each(function(){
+                $(this).prop("checked",!$(this).prop("checked"));
+            });
+            totalmoney();
+        }
+    });
+
+    // 单选输出
+    $(".checkbox").click(function(){
+        totalmoney();
+    });
+
+    // 计算方法
+    function totalmoney() {
+        var conts = 0;
+        $(".checkbox").each(function () {
+            if ($(this).prop("checked")) {
+                for (var i = 0; i < $(this).length; i++) {
+                   conts += parseInt($(this).parent().siblings(".tr-quantity").next().find('b').text());
+                }
+            }
+        });
+        $("#sc-cartInfo-totalPrice").html(conts);
+        $("#sc-cartInfo-totalOriginalPrice").html(conts);
+    }
+
+
+    // 加
+    $(".numadd").click(function(){
+        var input = $(this).siblings("#quantity-7443");
+        var obj = $(this).parents(".tr-quantity");
+        var per = parseFloat(obj.siblings(".unitprice").find("span").text());//获取当前一行的单价
+        var num = '';
+        var price = '';
+        num = parseInt(input.prop("value"));
+        stock = $(this).parents("#tr-num").next().next().next().val();
+        per = parseFloat($(this).parents("#tr-num").siblings(".unitprice").find("span").text());
+        if(num >= stock){
+            $(this).prop('value',stock);
+            price = stock * per;
+            $(this).parents("#tr-num").siblings(".tr-subtotal").find("b").text(price);
+            layer.alert('不能超过库存噢');
+        }else{
+            input.prop("value", parseInt(input.prop("value")) + 1 );
+            num = parseInt(input.prop("value"));
+            price = num*per;
+            $(this).parents("#tr-num").siblings(".tr-subtotal").find("b").text(price);
+        }
+        totalmoney();
+        id = $(this).parent().parent().parent().parent().find('.checkbox').val();
+        $.post(
+            "__CONTROLLER__/scSave",
+            {id:id, num:num, price:price}
+        );
+    });
+
+    // 减
+    $(".numreduce").click(function(){
+        var input = $(this).siblings("#quantity-7443");
+        var obj = $(this).parents(".tr-quantity");
+        var per = parseFloat(obj.siblings(".unitprice").find("span").text());//获取当前一行的单价
+        var num = '';
+        var price = '';
+        var Val = parseInt(input.prop("value"));
+        if(Val <= 1){
+            Val = 2;
+        }
+        input.prop("value", parseInt(Val) - 1 );
+        num = input.prop("value");
+        price = num*per;//
+        obj.siblings(".tr-subtotal").find("b").text(price);
+        totalmoney();
+        id = $(this).parent().parent().parent().parent().find('.checkbox').val();
+        $.post(
+            "__CONTROLLER__/scSave",
+            {id:id, num:num, price:price}
+        );
+    })
+
+
+    // 判断是否大于库存
+    // AJAX即时保存到购物车表
+    $('.shop-quantity').keyup(function(){
+        var obj = $(this).parents("#tr-num");
+        var per = parseFloat(obj.siblings(".unitprice").find("span").text());//获取当前一行的单价
+        id = $(this).parent().parent().parent().parent().find('.checkbox').val();
+        stock = $(this).parents("#tr-num").next().next().next().val();
+        num = parseInt($(this).val());
+
+        if(num > stock){
+            $(this).prop('value',stock);
+            num = $(this).prop("value");
+            price = stock * per;
+            $(this).parents("#tr-num").siblings(".tr-subtotal").find("b").text(price);
+            layer.alert('不能超过库存噢');
+        }else{
+            price = num * per;
+            obj.siblings(".tr-subtotal").find("b").text(price);                
+        }
+        totalmoney();
+        $.post(
+            "__CONTROLLER__/scSave",
+            {id:id, num:num, price:price}
+        );
+    });
+
+    // 不勾选无法购买
+    $("#cart-pay").click(function(){
+    	var sid = [];
+    	if( $('.checkbox:checked').length == 0 ){
+    		alert('请选中商品后再购买！');
+    		return false;
+    	}else{
+    		$('.checkbox:checked').each(function(i){
+    			sid[i] = $(this).val();
+    			$('input[name=sid]').prop('value',sid);
+    		});
+            totalprice = $("#sc-cartInfo-totalPrice").html();
+            $('input[name=totalprice]').prop('value',totalprice);
+    	}
+    	
+    });
+
+    // 删除
+    $('.scdel').click(function(){
+        var sid = $(this).parent().parent().find('#box-7443').attr('value');
+        var obj = $(this).parents("tbody");
+        layer.msg('确认要删除吗？', {
+          time: 0 
+          ,btn: ['确认', '取消']
+          ,yes: function(index){
+            $.get(
+                '__CONTROLLER__/scdel',
+                {sid : sid},
+                function(status){
+                    if(status == 0){
+                        layer.close(index);
+                        layer.msg('已删除!',{icon:1,time:1000});
+                        obj.remove();
+                            if($('#goodslist').find('tbody').length == 0){
+                                $('#cart-empty-msg').removeClass('hide');
+                                $('#cart-total-area').addClass('hide');
+                                $('#cart-action-area').addClass('hide');
+                            }
+                    }else{
+                        layer.msg('删除失败,请重试!',{icon:2,time:1000});
+                    }
+                }
+            );
+          }
+        });
+    });
+    
+    // 批量删除
+    $('#cart-all-del').click(function(){
+        var sid = [];
+        $('.checkbox:checked').each(function(i){
+            sid[i] = $(this).val();
+        });
+        if(sid[0] == undefined){
+            layer.msg('请选择要删除的商品!',{icon:2,time:1000});
+        }else{
+            layer.msg('确认要删除吗？', {
+              time: 0 
+              ,btn: ['确认', '取消']
+              ,yes: function(index){
+                $.get(
+                    '__CONTROLLER__/scalldel',
+                    {sid : sid},
+                    function(status){
+                        if(status == 0){
+                            layer.close(index);
+                            layer.msg('已删除!',{icon:1,time:1000});
+                            $('.checkbox:checked').parents('tbody').remove();
+                                if($('#goodslist').find('tbody').length == 0){
+                                    $('#cart-empty-msg').removeClass('hide');
+                                    $('#cart-total-area').addClass('hide');
+                                    $('#cart-action-area').addClass('hide');
+                                }
+                        }else{
+                            layer.msg('删除失败,请重试!',{icon:2,time:1000});
+                        }
+                    }
+                );
+              }
+            });
+        }
+    });
+</script>

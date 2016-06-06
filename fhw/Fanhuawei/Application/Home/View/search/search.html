@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-cn">
+<title>【华为平板 /穿戴】平板电脑、智能手环 、智能手表- 华为商城_华为商城</title>
+<meta name="keywords" content="华为平板电脑报价,华为平板电脑推荐,华为平板电脑怎么样,智能手环怎么样,智能手表报价,">
+<meta name="description" content="华为商城是华为旗下面向全国服务的电子商务官网。我们提供最新华为平板电脑推荐大全、华为平板电脑报价、图片和参数等商品信息。品质保证！">
+
+<link href="__PUBLIC__/css/ec.core.min.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/header.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/catelist.min.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]><script>ol.isIE6=true;</script><![endif]--><!--[if IE 7]><script>ol.isIE7=true;</script><![endif]--><!--[if IE 8]><script>ol.isIE8=true;</script><![endif]-->
+<script src="__PUBLIC__/js/jquery-1.10.2.min.js"></script>
+<script src="__PUBLIC__/js/ec.core.js"></script> 
+<script src="__PUBLIC__/js/ec.business.js"></script> 
+<!--[if lt IE 9]><script src="http://res.vmallres.com/20160509/js/common/html5shiv.js"></script> <![endif]-->
+</head>
+
+
+
+<body class="wide huawei">
+<div class="top-banner" id="top-banner-block"></div>
+
+<include file="public/header" />
+
+<!-- 分类开始 -->
+<div class="hr-10"></div>
+<div class="g">
+    <!--面包屑 -->
+<div class="breadcrumb-area fcn">
+  <p style="color:#0F0F0F">☞ 搜索 {$keyword} 共找到商品 {$num} 件</p>
+</div>
+<div class="hr-10"></div><div class="layout">
+  <!-- 20140726-商品类别-start -->
+  <div class="pro-cate-area">
+    
+    <!-- 20140726-商品类别-排序-start -->
+    <div class="pro-cate-sort clearfix">
+      <div class="p-title">排序：</div>
+      <div class="p-values">
+        <div class="p-expand">          
+          <ul class="clearfix">
+              <!-- 升序选择（从低到高）： sort-asc selected   降序选择（从高到低）： sort-desc selected -->
+            <li id="sort-price" class="" value="price"><a href="{:U('search/search',array('sort'=>'price','keyword'=>$keyword,'order'=>$order))}" class="sort-price">价格<s>&nbsp;</s></a></li>
+            <li id="sort-registterTime" value="addtime"><a href="{:U('search/search',array('sort'=>'addtime','keyword'=>$keyword,'order'=>$order))}" class="sort-added">&nbsp;上架时间<s></s></a></li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- 20140726-商品类别-排序-end -->
+  </div><!-- 20140726-商品类别-end -->
+  <div class="hr-20"></div>
+</div>        
+
+  <!-- 20140726-频道-列表-start -->
+    <div class="channel-list">
+        <!-- 20140727-商品列表-start -->
+    <div class="pro-list clearfix">
+      <ul>
+  <foreach name="goodslist" item="vo">
+        <li value="{$vo.cateid}">
+          <div class="pro-panels">
+            <p class="p-img"><a target="_blank" href="{:U('detail/particulars',array('goods_id'=>$vo['id']))}" title="{$vo.name}"><img src="__PUBLIC__/{$vo.image1}"></a></p>
+            <p class="p-name"><a target="_blank" href="{:U('detail/particulars',array('goods_id'=>$vo['id']))}" title="{$vo.name}">{$vo.name}<span class="red"></span></a></p>
+            <p class="p-price"><b>¥{$vo.price}</b></p>
+            <s class="p-tag"><img src="__PUBLIC__/images/1460242398600.png"></s>
+          </div>
+        </li>
+</foreach>
+      </ul>
+    </div>
+        <div id="cart-empty-msg" class="sc-empty-area hide">
+            抱歉，没有找到您搜索的相关商品，试试修改搜索词吧！
+        </div>
+    <!-- 20140727-商品列表-end -->
+  </div><!-- 20140726-频道-列表-end -->
+<!--口号-20121025 -->
+
+<include file="public/footer" />
+
+</div>
+</body>
+</html>
+
+<script>
+ // 排序的判断
+    $("li[value='{$sort}']").addClass('selected');
+    if( {$num} == 0 ){
+      $('#cart-empty-msg').removeClass('hide');
+    }
+</script> 

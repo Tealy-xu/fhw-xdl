@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="Content-Language" content="zh-cn">
+    <title>繁花唯商城</title>
+    <meta name="description" content="网页描述">
+    <meta name="keywords" content="关键字">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/header.css">
+    <script src="__PUBLIC__/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/core.js"></script>
+</head>
+<body>
+<include file="public/header" />
+<script>
+  $('.category-list').attr('style','display:block');
+</script>
+      <div class="hot-board">
+        <div class="slider">
+           <div id="slider-img-list">
+              <div><a href="#"><img src="__PUBLIC__/images/img/20151222212225106.png" /></a></div>
+              <div><a href="#"><img src="__PUBLIC__/images/img/20151223145745224.jpg" /></a></div>
+              <div><a href="#"><img src="__PUBLIC__/images/img/20151223150140647.jpg" /></a></div>
+              <div><a href="#"><img src="__PUBLIC__/images/img/20151223222647443.jpg" /></a></div>
+              <div><a href="#"><img src="__PUBLIC__/images/img/20151223222759399.jpg" /></a></div>
+           </div>
+        </div>
+      </div>
+      <div class="hr20"></div>
+      <div class="layout head-item">
+        <div class="hl">
+          <ul class="channel-list">
+          <foreach name="tuijian" item="v">
+            <li class="channel-item w50">
+              <div class="channel-item-info">
+                <div class="pro-info c1">
+                  <div class="info-img"><a href="{:U('detail/particulars',array('goods_id'=>$v['id']))}"><img src="__PUBLIC__{$v.image1}" width="180px" height="180px" /></a></div>
+                  <div class="info-title" style="font-size:15px;"><a href="{:U('detail/particulars',array('goods_id'=>$v['id']))}">{$v.name}</a></div>
+                  <div class="price">￥{$v.price}</div>
+                  <div class="button"><a href="{:U('detail/particulars',array('goods_id'=>$v['id']))}">立即抢购</a></div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            </foreach>
+          </ul>
+          <div style="clear:both;"></div>
+        </div>
+        <div class="hr">
+          <div class="channel-sale">
+            <img src="__PUBLIC__/images/img/20160108214217801.jpg" />
+          </div>
+          <div class="channel-news">
+            <div class="news-tab">
+              <div class="h">
+                <span id="notice" class="current"><a href="{:U('announcement/announcementList')}" >公告</a></span>
+                <span id="news"><a href="{:U('announcement/announcementList')}" >新闻</a></span>
+              </div>
+              <div class="b">
+                <ul id="notice-content-list">
+                <foreach name="msglist1" item="msglist1">
+                  <li><a href="{:U('announcement/announcement',array('id'=>$msglist1[id]))}">{$msglist1.title}</a></li>
+                </foreach>
+                </ul>
+                <ul id="notice-content-list" style="display:none;">
+                <foreach name="msglist2" item="msglist2">
+                  <li><a href="{:U('announcement/announcement',array('id'=>$msglist2[id]))}">{$msglist2.title}</a></li>
+                </foreach>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hr20"></div>
+          <div class="news-img">
+            <a href="#"><img src="__PUBLIC__/images/img/2016010100091382.jpg" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="layout">
+        <div class="middlebanner">
+          <div><a href="#"><img src="__PUBLIC__/images/img/20151222103547290.jpg" /></a></div>
+          <div><a href="#"><img src="__PUBLIC__/images/img/20160119102544602.jpg" /></a></div>
+          <div><a href="#"><img src="__PUBLIC__/images/img/20160114092941990.jpg" /></a></div>
+          <div><a href="#"><img src="__PUBLIC__/images/img/20160112093445949.jpg" /></a></div>
+          <div><a href="#"><img src="__PUBLIC__/images/img/20160114144457233.jpg" /></a></div>
+        </div>
+      </div>
+      <div class="hr20"></div>
+      <div class="layout">
+        <div class="h">
+          <h2><a href="#">手机</a></h2>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="b mobile-list">
+          <ul class="channel-list">
+            <li class="channel-item w50">
+              <div class="channel-item-info">
+                <div class="pro-info c1">
+                  <div class="info-img-mobile"><a href="{:U('detail/particulars',array('goods_id'=>$firstphone[0]['id']))}"><img src="__PUBLIC__{$firstphone[0]['image1']}" width="200px" height="200px" /></a></div>
+                  <div class="i-name"><a href="{:U('detail/particulars',array('goods_id'=>$firstphone[0]['id']))}">{$firstphone[0]['name']}</a></div>
+                  <div class="i-detail">
+                    <p style="color:#777;height:40px;overflow:hidden;">{$firstphone[0]['intro']}</p>
+                  </div>
+                  <div class="i-price">￥{$firstphone[0]['price']}</div>
+                  <div class="button"><a href="{:U('detail/particulars',array('goods_id'=>$firstphone['id']))}">立即抢购</a></div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            <foreach name="phone" item="phone">
+            <li class="channel-item w25">
+              <div class="channel-item-info">
+                <div class="pro-info c2">
+                  <div class="info-img-noleft"><a href="{:U('detail/particulars',array('goods_id'=>$phone['id']))}"><img src="__PUBLIC__{$phone.image1}" /></a></div>
+                  <div class="i-name">
+                    <p style="color:#333;height:20px;overflow:hidden;"><a href="{:U('detail/particulars',array('goods_id'=>$phone['id']))}">{$phone.name}</a></p>
+                  </div>
+                  <div class="i-price">￥{$phone.price}</div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            </foreach>
+          </ul>
+        </div>
+      </div>
+      <div class="hr20"></div>
+      <div class="layout">
+        <div class="h">
+          <h2><a href="#">平板 & 穿戴</a></h2>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="b mobile-list">
+          <ul class="channel-list">
+            <li class="channel-item w50">
+              <div class="channel-item-info">
+                <div class="pro-info c1">
+                  <div class="info-img-mobile"><a href="{:U('detail/particulars',array('goods_id'=>$firstpinban[0]['id']))}"><img src="__PUBLIC__{$firstpinban[0]['image1']}" width="200px" height="200px" /></a></div>
+                  <div class="i-name" style="height:45px;overflow:hidden;"><a href="{:U('detail/particulars',array('goods_id'=>$firstpinban[0]['id']))}">{$firstpinban[0]['name']}</a></div>
+                  <div class="i-detail">
+                    <p style="color:#777;height:40px;overflow:hidden;">{$firstpinban[0]['intro']}</p>
+                  </div>
+                  <div class="i-price">￥{$firstpinban[0]['price']}</div>
+                  <div class="button"><a href="{:U('detail/particulars',array('goods_id'=>$firstpinban[0]['id']))}">立即抢购</a></div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            <foreach name="pinban" item="pinban">
+            <li class="channel-item w25">
+              <div class="channel-item-info">
+                <div class="pro-info c2">
+                  <div class="info-img-noleft"><a href="{:U('detail/particulars',array('goods_id'=>$pinban['id']))}"><img src="__PUBLIC__{$pinban.image1}" /></a></div>
+                  <div class="i-name">
+                    <p style="color:#333;height:20px;overflow:hidden;"><a href="{:U('detail/particulars',array('goods_id'=>$pinban['id']))}">{$pinban.name}</a></p>
+                  </div>
+                  <div class="i-price">￥{$pinban.price}</div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            </foreach>
+          </ul>
+        </div>
+      </div>
+       <div class="hr20"></div>
+      <div class="layout">
+        <div class="h">
+          <h2><a href="#">智能家居</a></h2>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="b mobile-list">
+          <ul class="channel-list">
+            <li class="channel-item w50">
+              <div class="channel-item-info">
+                <div class="pro-info c1">
+                  <div class="info-img-mobile"><a href="{:U('detail/particulars',array('goods_id'=>$firstjiaju[0]['id']))}"><img src="__PUBLIC__{$firstjiaju[0]['image1']}" width="200px" height="200px" /></a></div>
+                  <div class="i-name" style="height:45px;overflow:hidden;"><a href="{:U('detail/particulars',array('goods_id'=>$firstjiaju[0]['id']))}">{$firstjiaju[0]['name']}</a></div>
+                  <div class="i-detail">
+                    <p style="color:#777;height:40px;overflow:hidden;">{$firstjiaju[0]['intro']}</p>
+                  </div>
+                  <div class="i-price">￥{$firstjiaju[0]['price']}</div>
+                  <div class="button"><a href="{:U('detail/particulars',array('goods_id'=>$firstjiaju[0]['id']))}">立即抢购</a></div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            <foreach name="jiaju" item="jiaju">
+            <li class="channel-item w25">
+              <div class="channel-item-info">
+                <div class="pro-info c2">
+                  <div class="info-img-noleft"><a href="{:U('detail/particulars',array('goods_id'=>$jiaju['id']))}"><img src="__PUBLIC__{$jiaju.image1}" /></a></div>
+                  <div class="i-name">
+                    <p style="color:#333;height:20px;overflow:hidden;"><a href="{:U('detail/particulars',array('goods_id'=>$jiaju['id']))}">{$jiaju.name}</a></p>
+                  </div>
+                  <div class="i-price">￥{$jiaju.price}</div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            </foreach>
+          </ul>
+        </div>
+      </div>
+      <div class="hr20"></div>
+      <div class="layout">
+        <div class="h">
+          <h2><a href="#">必备配件</a></h2>
+        </div>
+        <div style="clear:both;"></div>
+        <div class="b mobile-list">
+          <ul class="channel-list">
+            <li class="channel-item w50">
+              <div class="channel-item-info">
+                <div class="pro-info c1">
+                  <div class="info-img-mobile"><a href="{:U('detail/particulars',array('goods_id'=>$firstpeijian[0]['id']))}"><img src="__PUBLIC__{$firstpeijian[0]['image1']}" width="200px" height="200px" /></a></div>
+                  <div class="i-name" style="height:45px;"><a href="{:U('detail/particulars',array('goods_id'=>$firstpeijian[0]['id']))}">{$firstpeijian[0]['name']}</a></div>
+                  <div class="i-detail">
+                    <p style="color:#777;height:40px;overflow:hidden;">{$firstpeijian[0]['intro']}</p>
+                  </div>
+                  <div class="i-price">￥{$firstpeijian[0]['price']}</div>
+                  <div class="button"><a href="{:U('detail/particulars',array('goods_id'=>$firstpeijian[0]['id']))}">立即抢购</a></div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            <foreach name="peijian" item="peijian">
+            <li class="channel-item w25">
+              <div class="channel-item-info">
+                <div class="pro-info c2">
+                  <div class="info-img-noleft"><a href="{:U('detail/particulars',array('goods_id'=>$peijian['id']))}"><img src="__PUBLIC__{$peijian.image1}" /></a></div>
+                  <div class="i-name">
+                    <p style="color:#333;height:20px;overflow:hidden;"><a href="{:U('detail/particulars',array('goods_id'=>$peijian['id']))}">{$peijian.name}</a></p>
+                  </div>
+                  <div class="i-price">￥{$peijian.price}</div>
+                </div>
+                <i class="pro-l-tag"></i>
+              </div>
+            </li>
+            </foreach>
+          </ul>
+        </div>
+      </div>
+      <div class="hr20"></div>
+      <div class="body-bottom"><a href="#"><img src="__PUBLIC__/images/img/20151222143005583.jpg" /></a></div>
+      <div class="hr20"></div>
+      <div class="follow">
+        <div class="layout">
+          <ul>
+            <li><a href="#"><img src="__PUBLIC__/images/img/follow_hwsoft_application.png" /></a></li>
+            <li><a href="#"><img src="__PUBLIC__/images/img/follow_sina.png" /></a></li>
+            <li><a href="#"><img src="__PUBLIC__/images/img/follow_qzone.png" /></a></li>
+            <li><a href="#"><img src="__PUBLIC__/images/img/follow_android.png" /></a></li>
+          </ul>
+        </div>
+      </div>
+      <div style="clear:both;"></div>
+  <include file="public/footer" />
+  </body>
+<html>

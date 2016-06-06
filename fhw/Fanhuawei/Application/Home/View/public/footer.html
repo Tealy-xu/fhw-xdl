@@ -1,0 +1,93 @@
+<div class="slogan">
+  <ul>
+    <li class="s1"><i></i>500强企业&nbsp;品质保证</li>
+    <li class="s2"><i></i>7天退货&nbsp;15天换货</li>
+    <li class="s3"><i></i>
+      <span>99元起免运费</span>
+</li>
+    <li class="s4"><i></i>448家维修网点&nbsp;全国联保</li>
+  </ul>
+</div><!--口号-end -->
+<!--服务-20121025 -->
+<div class="service">
+    <dl class="s1">
+      <dt><i></i>帮助中心</dt>
+      <dd>
+        <ol>
+          <li><a target="_blank" href="#">购物指南</a></li>
+          <li><a target="_blank" href="#">配送方式</a></li>
+          <li><a target="_blank" href="#">支付方式</a></li>
+          <li><a target="_blank" href="#">常见问题</a></li>
+        </ol>
+      </dd>
+    </dl>
+    <dl class="s2">
+      <dt><i></i>售后服务</dt>
+      <dd>
+        <ol>
+          <li><a target="_blank" href="#">保修政策</a></li>
+          <li><a target="_blank" href="#">退换货政策</a></li>
+          <li><a target="_blank" href="#">退换货流程</a></li>
+          <li><a target="_blank" href="#">保修状态查询</a></li>
+        </ol>
+      </dd>
+    </dl>
+    <dl class="s3">
+      <dt><i></i>技术支持</dt>
+      <dd>
+        <ol>
+          <li><a target="_blank" href="#">售后网点</a></li>
+          <li><a target="_blank" href="#">预约维修</a></li>
+          <li><a target="_blank" href="#">手机寄修服务</a></li>
+          <li><a target="_blank" href="#">软件下载</a></li>
+        </ol>
+      </dd>
+    </dl>
+    <dl class="s4">
+      <dt><i></i>关于商城</dt>
+      <dd>
+        <ol>
+          <li><a target="_blank" href="#">公司介绍</a></li>
+          <li><a target="_blank" href="#">华为商城简介</a></li>
+          <li><a target="_blank" href="#">联系客服</a></li>
+        </ol>
+      </dd>
+    </dl>
+    <dl class="s5">
+      <dt><i></i>关注我们</dt>
+      <dd>
+        <ol>
+          <li><a class="sina" rel="nofollow" href="#" target="_blank">新浪微博</a></li>
+          <li><a class="qq" rel="nofollow" href="#" target="_blank">腾讯微博</a></li>
+          <li><a class="huafen" href="#" target="_blank">花粉社区</a></li>
+          <li><a href="#" target="_blank">商城手机版</a></li>
+        </ol>
+      </dd>
+    </dl>
+</div>
+<!--服务-end -->
+
+<!--底部 -->
+
+<footer class="footer">
+    <!-- 20130902-底部-友情链接-start -->
+  <div class="footer-otherLink">
+
+  </div>
+  <div class="footer-warrant-area"><p><a title="隐私政策" target="_blank" href="http://www.vmall.com/help/faq-2635.html">隐私政策</a>  <a title="服务协议" target="_blank" href="http://www.vmall.com/help/faq-778.html">服务协议</a>        Copyright © 2012-2016  VMALL.COM   版权所有  保留一切权利</p><p><a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011402010009"><img style="width:20px;height:20px;float:none;" src="__PUBLIC__/images/20160226162651249.png" title="公安备案" height="20" hspace="0" border="0" vspace="0" width="20"><span style="font-size:15px;font-family:宋体"><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 苏公网安备</span><span style="font-size:12px;font-family:arial,helvetica,sans-serif;"> 32011402010009号</span></span></a> | 苏ICP备09062682号-9 | 增值电信业务经营许可证：苏B2-20130048 | <a target="_blank" href="http://res.vmallres.com/certificate/wwwz.jpg">网络文化经营许可证：苏网文[2012]0401-019号</a></p><p><br><a target="_blank" href="http://res.vmallres.com/certificate/wwwz.jpg"></a></p><p><a target="_blank" href="http://www.jsgsj.gov.cn:60103/businessCheck/verifKey.do?serial=320100913201147770231720001001-SAIC_SHOW_32000020160129102316602&signData=MEUCIQDjstcg6fPylz+uES4LNTcBpBVlZujS8l5erIgXiDGw1QIgfHZFK11kZ1vB2enLCwvaslyfE1fztpB19AEK4hlwibo="><img src="__PUBLIC__/images/20160226162415360.png" style="float:none;width:90px;height:32px;" title="电子营业执照" height="32" hspace="0" border="0" vspace="0" width="90"></a>   <a target="_blank" href="https://ss.knet.cn/verifyseal.dll?sn=e13010932010038497pwz6000000&trustKey=dn&trustValue=vmall.com"><img style="width:90px;height:32px;float:none;" src="__PUBLIC__/images/20160226162521265.png" title="可信网站" height="32" hspace="0" border="0" vspace="0" width="90"></a>   <a target="_blank" href="https://search.szfw.org/cert/l/CX20121017001773002082"><img style="width:90px;height:32px;float:none;" src="__PUBLIC__/images/20160226162531395.png" title="诚信网站" height="32" hspace="0" border="0" vspace="0" width="90"></a></p></div><!--授权结束 -->
+</footer>
+
+<script type="text/javascript">
+// 这是友情链接的ajax遍历
+      $.ajax({
+        'url':"{:U('public/links')}",
+        'type':'GET',
+        'success':function(responseText,status,xhr){
+           if(status == 'success'){
+             $(".footer-otherLink").html(responseText);
+         }else{
+             window.location.reload();
+        }
+      }
+    });
+</script>

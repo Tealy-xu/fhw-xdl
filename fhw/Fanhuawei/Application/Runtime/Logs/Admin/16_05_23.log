@@ -1,0 +1,2125 @@
+[ 2016-05-23T11:21:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T11:21:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.133008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: yzm D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\LoginController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T11:21:23+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-05-23T11:21:47+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-23T11:22:29+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\LoginController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE `username` = 'goubi02' AND `userpass` = 'ee289ab49c901059d8a8a3baa674a1b0'  [ RunTime:0.0010s ]
+SQL: UPDATE `fhw_adminusers` SET `lastlogin`='1463973749',`lastip`='0.0.0.0' WHERE `id` = 14 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:22:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ids` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level = 0 and auth_id in (1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,8,9,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,6,21,34,35,36,38,22,37) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level = 1 and auth_id in (1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,8,9,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,6,21,34,35,36,38,22,37) )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:22:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:22:49+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 7  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:23:16+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/delRole?role_id=7
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: UPDATE `fhw_role` SET `del`='0' WHERE ( role_id=7 ) [ RunTime:0.0050s ]
+
+[ 2016-05-23T11:23:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:23:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:23:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/showAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE ( status=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 6  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:23:47+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/delUser?id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_adminusers` SET `disable`='0' WHERE `id` = 26 [ RunTime:0.0020s ]
+
+[ 2016-05-23T11:23:59+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/showAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE ( status=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 6  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:28:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/showAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE ( status=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 6  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.078004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.078004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.038003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.038003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.030001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.031001s ]
+
+[ 2016-05-23T11:28:43+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/delUsers?id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+
+[ 2016-05-23T11:30:23+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/showAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE ( status=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 6  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T11:30:29+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/delUsers?id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+
+[ 2016-05-23T11:30:40+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0100s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:30:43+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleUpdAdmin/role_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=0 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=1 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=2 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:30:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/doRoleUpdAdmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE `auth_id` IN ('1','13','14','88','89','15','20','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','2','7','23','24','25','26','27','28','29','30','31','8','9','3','10','81','82','83','84','85','86','87','11','12','90','91','92','93','94','95','96','4','16','32','33','17','73','74','77','78','79','80','5','18','57','58','59','61','62','63','64','65','66','67','68','19','69','70','71','72','6','21','34','35','36','38','22','37')  [ RunTime:0.0020s ]
+SQL: UPDATE `fhw_role` SET `role_auth_ids`='1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,8,9,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,96,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,6,21,34,35,36,38,22,37',`role_auth_ac`='Member-listMember,Member-delMember,Member-recBroMember,Admin-roleAdmin,Admin-permissionAdmin,Admin-showAdmin,Category-cateList,Category-cateAdd,Product-showProduct,Order-showOrder,Feedback-showFeedback,Blogroll-index,Article-showArticle,Product-addProduct,Email-index,Email-AllEmail,Member-doAdd,Member-doDel,Member-doStateOne,Member-doStateZero,Useredit-index,Useredit-doEdit,Change-index,Change-doChange,Member-showMember,Order-orderDetail,Order-dostate,Email-reply,Email-doReply,Email-showText,Email-doAllEmail,Email-doDel,Product-updGoods,Product-doUpdGoods,Product-addAttr,Product-doAddAttr,Product-updAttr,Product-addPic,Product-doUpdAttr,Product-updPic,Product-doUpdPic,Product-delGoods,Product-updStatus,Product-getGoods,Product-getAttrValue,Product-delStyleImg,Product-getCate,Product-delImg,Product-upload,Product-up,Blogroll-addBlogroll,Blogroll-updBlogroll,Blogroll-doAddBlogroll,Blogroll-doUpdBlogroll,Blogroll-up,Blogroll-upload,Blogroll-delImg,Blogroll-getBlogro,Blogroll-updStatus,Blogroll-delBlogro,Blogroll-delLogoImg,Article-addArticle,Article-doAddArticle,Article-getArticle,Article-updStatus,Feedback-addMember,Feedback-doAddMember,Feedback-addBackMember,Feedback-doAddBackMember,Feedback-getComment,Feedback-getUsers,Admin-roleUpdAdmin,Admin-doRoleUpdAdmin,Admin-roleaddAdmin,Admin-roleUpdAdmin,Admin-delRole,Admin-doRoleAddAdmin,Admin-doRoleUpdAdmin,Category-add,Category-delCate,Admin-addAdmin,Admin-doAddAdmin,Admin-updAdmin,Admin-doUpdAdmin,Admin-getCategory,Admin-delUser,Admin-delUsers' WHERE `role_id` = 1 [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:30:59+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:31:01+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/showAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE ( status=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0060s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 6  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0030s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T11:31:06+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/delUsers?id=26
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0250s ]
+SQL: UPDATE `fhw_adminusers` SET `status`='0' WHERE `id` = 26 [ RunTime:0.0040s ]
+
+[ 2016-05-23T11:31:09+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/showAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE ( status=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 6  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 0  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:27+08:00 ] ::1 /lamp/Fanhuawei/index.php/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:42:27+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: yzm D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\LoginController.class.php 第 15 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:28+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-23T19:42:32+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:38+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/yzm.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:45+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: id D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\LoginController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE `username` = 'goubi02' AND `userpass` = 'ee289ab49c901059d8a8a3baa674a1b0'  [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_adminusers` SET `lastlogin`='1464003765',`lastip`='0.0.0.0' WHERE `id` = 14 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:42:46+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ids` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level = 0 and auth_id in (1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,8,9,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,96,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,6,21,34,35,36,38,22,37) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level = 1 and auth_id in (1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,8,9,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,96,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,6,21,34,35,36,38,22,37) )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:42:46+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:49+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:51+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/addArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:53+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:55+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updArticle/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:42:56+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:23+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:25+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updArticle/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0050s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:27+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:28+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0090s ]
+SQL: SELECT `role_auth_ids` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level = 0 and auth_id in (1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,8,9,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,96,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,6,21,34,35,36,38,22,37) )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level = 1 and auth_id in (1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,8,9,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,96,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,6,21,34,35,36,38,22,37) )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:28+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Index/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:44:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:44:31+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/addArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:44:32+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:33+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updArticle/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:35+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:57+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:44:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleUpdAdmin/role_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0140s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=0 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=1 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=2 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:45:02+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/doRoleUpdAdmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE `auth_id` IN ('1','13','14','88','89','15','20','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','2','7','23','24','25','26','27','28','29','30','31','3','10','81','82','83','84','85','86','87','11','12','90','91','92','93','94','95','96','4','16','32','33','17','73','74','77','78','79','80','5','18','57','58','59','61','62','63','64','65','66','67','68','19','69','70','71','72','97','6','21','34','35','36','38','22','37')  [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_role` SET `role_auth_ids`='1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,96,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,97,6,21,34,35,36,38,22,37',`role_auth_ac`='Member-listMember,Admin-roleAdmin,Admin-permissionAdmin,Admin-showAdmin,Category-cateList,Category-cateAdd,Product-showProduct,Order-showOrder,Feedback-showFeedback,Blogroll-index,Article-showArticle,Product-addProduct,Email-index,Email-AllEmail,Member-doAdd,Member-doDel,Member-doStateOne,Member-doStateZero,Useredit-index,Useredit-doEdit,Change-index,Change-doChange,Member-showMember,Order-orderDetail,Order-dostate,Email-reply,Email-doReply,Email-showText,Email-doAllEmail,Email-doDel,Product-updGoods,Product-doUpdGoods,Product-addAttr,Product-doAddAttr,Product-updAttr,Product-addPic,Product-doUpdAttr,Product-updPic,Product-doUpdPic,Product-delGoods,Product-updStatus,Product-getGoods,Product-getAttrValue,Product-delStyleImg,Product-getCate,Product-delImg,Product-upload,Product-up,Blogroll-addBlogroll,Blogroll-updBlogroll,Blogroll-doAddBlogroll,Blogroll-doUpdBlogroll,Blogroll-up,Blogroll-upload,Blogroll-delImg,Blogroll-getBlogro,Blogroll-updStatus,Blogroll-delBlogro,Blogroll-delLogoImg,Article-addArticle,Article-doAddArticle,Article-getArticle,Article-updStatus,Feedback-addMember,Feedback-doAddMember,Feedback-addBackMember,Feedback-doAddBackMember,Feedback-getComment,Feedback-getUsers,Admin-roleUpdAdmin,Admin-doRoleUpdAdmin,Admin-roleaddAdmin,Admin-roleUpdAdmin,Admin-delRole,Admin-doRoleAddAdmin,Admin-doRoleUpdAdmin,Category-add,Category-delCate,Admin-addAdmin,Admin-doAddAdmin,Admin-updAdmin,Admin-doUpdAdmin,Admin-getCategory,Admin-delUser,Admin-delUsers,Article-updArticle' WHERE `role_id` = 1 [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:45:03+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:45:04+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:45:06+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updArticle/id/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_article` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-23T19:45:08+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:45:13+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/addArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-23T19:45:43+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/doAddArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: INSERT INTO `fhw_article` (`title`,`author`,`editorValue`,`addtime`) VALUES ('VMALL购物车大战，赢荣耀7等大奖','霖哥哥','<p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">Vmall</span><span style=\"font-family: 微软雅黑, sans-serif;\">购物车大战来咯~~</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">1</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、活动时间：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">2016</span><span style=\"font-family: 微软雅黑, sans-serif;\">年3月10——18日</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">2</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、参与方式：</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">①</span><span style=\"font-family: 微软雅黑, sans-serif;\">直接扫二维码关注华为商城官方微信。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">点击菜单栏→精彩活动→【购物车大战】,</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">即可参与游戏哟！</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\"><img src=\"/ueditor/php/upload/image/20160523/1464003938237621.png\" title=\"玩游戏赢荣耀7.png\" style=\"border: 0px none;\"/><br/></span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">在游戏中将出现的相关物品拖入对应的购物车里，即可赚积分赢大奖！邀请好友来玩还可再得5分（每邀请一个好友并成功参与游戏得5分），总积分越高,中奖机率越大。（游戏可不限次数重复参与，最终成绩由个人游戏得分和邀请好友所获奖励分构成。若出现分数相同的情况，则按时间顺序排名。）</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">3</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、奖品设置</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">一等奖：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">荣耀7(1台)&nbsp;从前100名中抽取</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">二等奖：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">华为手环B2(5个)&nbsp;从前500名中抽取</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">三等奖：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">荣耀引擎耳机PLUS(20个)从前500名中抽取</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">阳光普照奖:</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">华为商城优惠券(0-59分获得5元优惠券；&nbsp;60-99分获得10元优惠券；&nbsp;100-124分获得20元优惠券；125-174分获得50元优惠券；&nbsp;175-249分获得100元优惠券；&nbsp;250-349分获得150元优惠券。）</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">注：所有参与游戏的用户皆可领取，每个参与用户限领一次，优惠券将于工作日24小时内以短信的形式发放至游戏中所录入的手机号。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">4</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、优惠券使用说明</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">A.5</span><span style=\"font-family: 微软雅黑, sans-serif;\">元优惠券满100元使用；10元优惠券满200元使用；20元优惠券满500元使用；50元优惠券满1000元使用；100元优惠券满1500元使用；150元优惠券满2000元使用。<br/>B.抢购、代销、特价商品，及荣耀畅玩&nbsp;5X、荣耀7i移动版、荣耀畅玩4C双4G/电信版以及华为系列手机等不能使用。<br/>C.优惠券有效期：3月10日-3月21日。领券后请尽快使用。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">5</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、得分机制</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">A.</span><span style=\"font-family: 微软雅黑, sans-serif;\">游戏中共设置了6类物品：手机、手表、路由器、耳机、音箱、店庆徽章。除店庆徽章每个5分外，其余物品单个按1分计算;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">B.</span><span style=\"font-family: 微软雅黑, sans-serif;\">完成游戏可获个人游戏得分。玩家连续将物品拖入对应购物车内累计得分；若出现遗漏或分类错误，则不计入累计分数之中；</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">C.</span><span style=\"font-family: 微软雅黑, sans-serif;\">邀请好友参与游戏可获奖励分。每邀请一个好友成功参与游戏，邀请者再得5分。每位微信好友仅能为邀请者加一次分数;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">D.</span><span style=\"font-family: 微软雅黑, sans-serif;\">双方为一级关系。即：A完成游戏后邀请了好友B，B参与游戏A可加5分，B未参与A不加分。若B又邀请了好友C并参与游戏，B加5分，A不加分，以此类推。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">6</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、实物抽奖事宜</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">A.</span><span style=\"font-family: 微软雅黑, sans-serif;\">中奖名单将在活动结束后3个工作日内在华为商城官方微信、华为商城电脑版公告中公布。届时在“华为商城”官方微信中输入“中奖名单”亦可查询中奖情况;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">B.</span><span style=\"font-family: 微软雅黑, sans-serif;\">我们将在公布中奖名单后3个工作日内以短信方式通知中奖用户，届时请注意查收短信;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">C.</span><span style=\"font-family: 微软雅黑, sans-serif;\">请中奖用户在收到短信后的5天内回复您的收货地址(收货姓名+收货地址+手机号)。我们将核实中奖资格并于活动结束后15个工作日内发放奖品，逾期不反馈或反馈信息错误，视为自动放弃奖品。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">*</span><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">对于恶意刷积分的行为，一经发现，将取消中奖资格。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">*</span><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">主办方在法律允许的范围内保留对本次活动的最终解释权。</span></p><p><br/></p>','1464003943') [ RunTime:0.0650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:45:44+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:45:53+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updStatus?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_article` SET `status`='1' WHERE ( id=6 ) [ RunTime:0.0020s ]
+
+[ 2016-05-23T19:45:56+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updNoStatus?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+
+[ 2016-05-23T19:46:04+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updStatus?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_article` SET `status`='1' WHERE ( id=6 ) [ RunTime:0.0020s ]
+
+[ 2016-05-23T19:46:10+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:46:16+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updNoStatus?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+
+[ 2016-05-23T19:50:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/showAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_adminusers` WHERE ( status=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 6  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\AdminController.class.php 第 18 行.
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `role_id`,`role_name` FROM `fhw_role` WHERE `role_id` = 3  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:50:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0060s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:50:33+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleUpdAdmin/role_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fhw_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=0 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=1 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_auth` WHERE ( auth_level=2 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_role` WHERE `role_id` = 1 LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:50:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/doRoleUpdAdmin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_auth` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_auth` WHERE `auth_id` IN ('1','13','14','88','89','15','20','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','2','7','23','24','25','26','27','28','29','30','31','3','10','81','82','83','84','85','86','87','11','12','90','91','92','93','94','95','96','4','16','32','33','17','73','74','77','78','79','80','5','18','57','58','59','61','62','63','64','65','66','67','68','19','69','70','71','72','97','98','99','100','6','21','34','35','36','38','22','37')  [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_role` SET `role_auth_ids`='1,13,14,88,89,15,20,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,2,7,23,24,25,26,27,28,29,30,31,3,10,81,82,83,84,85,86,87,11,12,90,91,92,93,94,95,96,4,16,32,33,17,73,74,77,78,79,80,5,18,57,58,59,61,62,63,64,65,66,67,68,19,69,70,71,72,97,98,99,100,6,21,34,35,36,38,22,37',`role_auth_ac`='Member-listMember,Admin-roleAdmin,Admin-permissionAdmin,Admin-showAdmin,Category-cateList,Category-cateAdd,Product-showProduct,Order-showOrder,Feedback-showFeedback,Blogroll-index,Article-showArticle,Product-addProduct,Email-index,Email-AllEmail,Member-doAdd,Member-doDel,Member-doStateOne,Member-doStateZero,Useredit-index,Useredit-doEdit,Change-index,Change-doChange,Member-showMember,Order-orderDetail,Order-dostate,Email-reply,Email-doReply,Email-showText,Email-doAllEmail,Email-doDel,Product-updGoods,Product-doUpdGoods,Product-addAttr,Product-doAddAttr,Product-updAttr,Product-addPic,Product-doUpdAttr,Product-updPic,Product-doUpdPic,Product-delGoods,Product-updStatus,Product-getGoods,Product-getAttrValue,Product-delStyleImg,Product-getCate,Product-delImg,Product-upload,Product-up,Blogroll-addBlogroll,Blogroll-updBlogroll,Blogroll-doAddBlogroll,Blogroll-doUpdBlogroll,Blogroll-up,Blogroll-upload,Blogroll-delImg,Blogroll-getBlogro,Blogroll-updStatus,Blogroll-delBlogro,Blogroll-delLogoImg,Article-addArticle,Article-doAddArticle,Article-getArticle,Article-updStatus,Feedback-addMember,Feedback-doAddMember,Feedback-addBackMember,Feedback-doAddBackMember,Feedback-getComment,Feedback-getUsers,Admin-roleUpdAdmin,Admin-doRoleUpdAdmin,Admin-roleaddAdmin,Admin-roleUpdAdmin,Admin-delRole,Admin-doRoleAddAdmin,Admin-doRoleUpdAdmin,Category-add,Category-delCate,Admin-addAdmin,Admin-doAddAdmin,Admin-updAdmin,Admin-doUpdAdmin,Admin-getCategory,Admin-delUser,Admin-delUsers,Article-updArticle,Article-doUpdArticle,Article-updNoStatus,Article-updDel' WHERE `role_id` = 1 [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:50:41+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Admin/roleAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_role` WHERE ( del = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_adminusers` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 3  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 4  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 5  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 8  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`username` FROM `fhw_adminusers` WHERE `roleid` = 9  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:50:42+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`url`,`namepic`,`addtime`,`state`,`email`,`qq` FROM `fhw_blogro` WHERE `del` = 1  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:50:43+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:50:47+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updNoStatus?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0180s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_article` SET `status`='0' WHERE ( id=6 ) [ RunTime:0.0040s ]
+
+[ 2016-05-23T19:50:50+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updStatus?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_article` SET `status`='1' WHERE ( id=6 ) [ RunTime:0.0030s ]
+
+[ 2016-05-23T19:50:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updArticle/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0060s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_article` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:51:01+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/doUpdArticle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_article` SET `id`='6',`title`='VMALL购物车大战，赢荣耀7等大奖',`author`='霖哥',`editorValue`='<p>				</p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">Vmall</span><span style=\"font-family: 微软雅黑, sans-serif;\">购物车大战来咯~~</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">1</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、活动时间：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">2016</span><span style=\"font-family: 微软雅黑, sans-serif;\">年3月10——18日</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">2</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、参与方式：</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">①</span><span style=\"font-family: 微软雅黑, sans-serif;\">直接扫二维码关注华为商城官方微信。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">点击菜单栏→精彩活动→【购物车大战】,</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">即可参与游戏哟！</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; text-align: center; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\"><img src=\"/ueditor/php/upload/image/20160523/1464003938237621.png\" title=\"玩游戏赢荣耀7.png\" style=\"border: 0px none;\"/><br/></span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">在游戏中将出现的相关物品拖入对应的购物车里，即可赚积分赢大奖！邀请好友来玩还可再得5分（每邀请一个好友并成功参与游戏得5分），总积分越高,中奖机率越大。（游戏可不限次数重复参与，最终成绩由个人游戏得分和邀请好友所获奖励分构成。若出现分数相同的情况，则按时间顺序排名。）</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">3</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、奖品设置</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">一等奖：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">荣耀7(1台)&nbsp;从前100名中抽取</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">二等奖：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">华为手环B2(5个)&nbsp;从前500名中抽取</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">三等奖：</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">荣耀引擎耳机PLUS(20个)从前500名中抽取</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">阳光普照奖:</span></strong><span style=\"font-family: 微软雅黑, sans-serif;\">华为商城优惠券(0-59分获得5元优惠券；&nbsp;60-99分获得10元优惠券；&nbsp;100-124分获得20元优惠券；125-174分获得50元优惠券；&nbsp;175-249分获得100元优惠券；&nbsp;250-349分获得150元优惠券。）</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">注：所有参与游戏的用户皆可领取，每个参与用户限领一次，优惠券将于工作日24小时内以短信的形式发放至游戏中所录入的手机号。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">4</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、优惠券使用说明</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">A.5</span><span style=\"font-family: 微软雅黑, sans-serif;\">元优惠券满100元使用；10元优惠券满200元使用；20元优惠券满500元使用；50元优惠券满1000元使用；100元优惠券满1500元使用；150元优惠券满2000元使用。<br/>B.抢购、代销、特价商品，及荣耀畅玩&nbsp;5X、荣耀7i移动版、荣耀畅玩4C双4G/电信版以及华为系列手机等不能使用。<br/>C.优惠券有效期：3月10日-3月21日。领券后请尽快使用。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">5</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、得分机制</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">A.</span><span style=\"font-family: 微软雅黑, sans-serif;\">游戏中共设置了6类物品：手机、手表、路由器、耳机、音箱、店庆徽章。除店庆徽章每个5分外，其余物品单个按1分计算;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">B.</span><span style=\"font-family: 微软雅黑, sans-serif;\">完成游戏可获个人游戏得分。玩家连续将物品拖入对应购物车内累计得分；若出现遗漏或分类错误，则不计入累计分数之中；</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">C.</span><span style=\"font-family: 微软雅黑, sans-serif;\">邀请好友参与游戏可获奖励分。每邀请一个好友成功参与游戏，邀请者再得5分。每位微信好友仅能为邀请者加一次分数;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">D.</span><span style=\"font-family: 微软雅黑, sans-serif;\">双方为一级关系。即：A完成游戏后邀请了好友B，B参与游戏A可加5分，B未参与A不加分。若B又邀请了好友C并参与游戏，B加5分，A不加分，以此类推。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; white-space: normal; background-color: rgb(255, 255, 255);\"><strong><span style=\"font-family: 微软雅黑, sans-serif;\">6</span></strong><strong><span style=\"font-family: 微软雅黑, sans-serif;\">、实物抽奖事宜</span></strong></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">A.</span><span style=\"font-family: 微软雅黑, sans-serif;\">中奖名单将在活动结束后3个工作日内在华为商城官方微信、华为商城电脑版公告中公布。届时在“华为商城”官方微信中输入“中奖名单”亦可查询中奖情况;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">B.</span><span style=\"font-family: 微软雅黑, sans-serif;\">我们将在公布中奖名单后3个工作日内以短信方式通知中奖用户，届时请注意查收短信;</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif;\">C.</span><span style=\"font-family: 微软雅黑, sans-serif;\">请中奖用户在收到短信后的5天内回复您的收货地址(收货姓名+收货地址+手机号)。我们将核实中奖资格并于活动结束后15个工作日内发放奖品，逾期不反馈或反馈信息错误，视为自动放弃奖品。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">*</span><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">对于恶意刷积分的行为，一经发现，将取消中奖资格。</span></p><p style=\"margin-top: 0px; margin-bottom: 19px; padding: 0px; color: rgb(51, 51, 51); font-family: Arial, Helvetica, sans-serif; font-size: 12px; white-space: normal; line-height: 24px; background-color: rgb(255, 255, 255);\"><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">*</span><span style=\"font-family: 微软雅黑, sans-serif; color: red;\">主办方在法律允许的范围内保留对本次活动的最终解释权。</span></p><p><br/></p><p>				</p>' WHERE ( id=6 ) [ RunTime:0.0080s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:51:03+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:51:05+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/updArticle/id/6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0050s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `fhw_article` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:51:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:51:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`url`,`namepic`,`addtime`,`state`,`email`,`qq` FROM `fhw_blogro` WHERE `del` = 1  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:51:40+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/addBlogroll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:52:34+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/doAddBlogroll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: img D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\BlogrollController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: INSERT INTO `fhw_blogro` (`name`,`url`,`namepic`,`addtime`) VALUES ('历趣网','http://www.liqucn.com/','','1464004354') [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:52:35+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0020s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`url`,`namepic`,`addtime`,`state`,`email`,`qq` FROM `fhw_blogro` WHERE `del` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:52:49+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/updStatus?id=29&status=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0020s ]
+SQL: UPDATE `fhw_blogro` SET `state`='1' WHERE ( id=29 ) [ RunTime:0.0020s ]
+
+[ 2016-05-23T19:52:51+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/updStatus?id=29&status=0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0020s ]
+SQL: UPDATE `fhw_blogro` SET `state`='0' WHERE ( id=29 ) [ RunTime:0.0030s ]
+
+[ 2016-05-23T19:52:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/updBlogroll/id/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_blogro` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-23T19:52:57+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/doUpdBlogroll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: img D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\BlogrollController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: UPDATE `fhw_blogro` SET `id`='29',`name`='历趣网1',`url`='http://www.liqucn.com/',`namepic`='' WHERE ( id=29 ) [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:52:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`url`,`namepic`,`addtime`,`state`,`email`,`qq` FROM `fhw_blogro` WHERE `del` = 1  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:53:02+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/updBlogroll/id/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro` WHERE ( id=29 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:53:06+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/doUpdBlogroll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: img D:\wamp\www\lamp\Fanhuawei\Application\Admin\Controller\BlogrollController.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0040s ]
+SQL: UPDATE `fhw_blogro` SET `id`='29',`name`='历趣网',`url`='http://www.liqucn.com/',`namepic`='' WHERE ( id=29 ) [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-23T19:53:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Blogroll/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0030s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`url`,`namepic`,`addtime`,`state`,`email`,`qq` FROM `fhw_blogro` WHERE `del` = 1  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-23T19:53:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Admin/Article/showArticle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_role` [ RunTime:0.0040s ]
+SQL: SELECT `role_auth_ac` FROM `fhw_role` WHERE ( role_id=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`title`,`addtime`,`author`,`status` FROM `fhw_article` WHERE ( del=1 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

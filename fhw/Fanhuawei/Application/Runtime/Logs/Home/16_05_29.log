@@ -1,0 +1,504 @@
+[ 2016-05-29T18:28:52+08:00 ] ::1 /fhw/Fanhuawei/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+ERR: SQLSTATE[HY000] [2002] ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2016-05-29T18:31:27+08:00 ] ::1 /fhw/Fanhuawei/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001863s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `fhw_goods` LIMIT 4   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fhw_categorys` WHERE ( pid=10 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: pid D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\IndexController.class.php 第 15 行.
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (11,12,13) ) LIMIT 2,6   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (11,12,13) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fhw_categorys` WHERE ( pid=15 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: pdid D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\IndexController.class.php 第 27 行.
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (16,17) ) LIMIT 2,6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (16,17) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fhw_categorys` WHERE ( pid=19 )  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: jjid D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (20,21,22) ) LIMIT 2,6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (20,21,22) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id` FROM `fhw_categorys` WHERE ( pid=23 )  [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: pjid D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\IndexController.class.php 第 52 行.
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (24,26,27) ) LIMIT 2,6   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid in (24,26,27) ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fhw_article` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `fhw_article` LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fhw_article` LIMIT 6,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000449s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000614s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 416 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 416 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 416 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 416 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 416 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 419 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 419 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 419 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 419 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 419 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\fhw\Fanhuawei\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 456 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001688s ]
+
+[ 2016-05-29T18:31:28+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001161s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.1424s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0047s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+
+[ 2016-05-29T18:31:28+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000973s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001421s ]
+
+[ 2016-05-29T18:31:28+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001155s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001588s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2016-05-29T18:31:28+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `fhw_blogro` WHERE ( state=1 )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2016-05-29T18:31:29+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: user_id D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: user_name D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 71 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000919s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2016-05-29T18:31:32+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/catelist/catelist/cid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( id=10 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( pid=10 ) ORDER BY id asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `fhw_goods` WHERE `cateid` IN ('11','12','13') ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000323s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2016-05-29T18:31:32+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000905s ]
+
+[ 2016-05-29T18:31:32+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001774s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0046s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+
+[ 2016-05-29T18:31:32+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001729s ]
+
+[ 2016-05-29T18:31:32+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002808s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `fhw_blogro` WHERE ( state=1 )  [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001332s ]
+
+[ 2016-05-29T18:31:32+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: user_id D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: user_name D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 71 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001285s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001402s ]
+
+[ 2016-05-29T18:31:35+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/catelist/catelist/cid/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( id=11 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( id=10 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( pid=10 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `fhw_goods` WHERE ( cateid=11 ) ORDER BY id asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028620s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028761s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2016-05-29T18:31:35+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001065s ]
+
+[ 2016-05-29T18:31:35+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000071s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001580s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0036s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+
+[ 2016-05-29T18:31:35+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2016-05-29T18:31:35+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002334s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `fhw_blogro` WHERE ( state=1 )  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001513s ]
+
+[ 2016-05-29T18:31:35+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: user_id D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: user_name D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 71 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001237s ]
+
+[ 2016-05-29T18:31:37+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/detail/particulars/goods_id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0062s ]
+ERR: 系统不支持:memcache
+
+[ 2016-05-29T18:31:41+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/detail/particulars/goods_id/27.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0610s ]
+ERR: 系统不支持:memcache
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002843s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0055s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003357s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000965s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `fhw_blogro` WHERE ( state=1 )  [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001518s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001690s ]
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.017253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001889s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001906s ]
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: user_id D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: user_name D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 71 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001549s ]
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0067s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001680s ]
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001798s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001807s ]
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001330s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `fhw_blogro` WHERE ( state=1 )  [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2016-05-29T18:45:23+08:00 ] ::1 /fhw/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001930s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 60 行.
+NOTIC: [8] Undefined variable: user_id D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 70 行.
+NOTIC: [8] Undefined variable: user_name D:\wamp\www\fhw\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 71 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001561s ]
+

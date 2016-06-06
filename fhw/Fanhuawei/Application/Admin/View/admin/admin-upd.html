@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="__PUBLIC__/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/lib/icheck/icheck.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/lib/Hui-iconfont/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>添加管理员</title>
+</head>
+<body>
+<div class="pd-20">
+	<form action="{:U('Admin/doUpdAdmin')}" method="post" class="form form-horizontal" id="form-admin-add">
+		<input type="hidden"  value="{$userinfo.id}" name="id">
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>登录名：{$uinfo.username}</label>
+			<div class="formControls col-5">
+				<input type="text" disabled class="input-text" value="{$userinfo.username}" placeholder="" id="user-name" name="username" datatype="*2-16" >
+
+			</div>
+			<div class="col-4"> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3"><span class="c-red">*</span>密码：</label>
+			<div class="formControls col-5">
+				<input type="password" id="user-pass" placeholder="密码"  value="" class="input-text" datatype="*6-20" name="userpass">
+			</div>
+			<div class="col-4"> </div>
+		</div>
+		<div class="row cl">
+			<label class="form-label col-3">角色：</label>
+			<div class="formControls col-5"> <span class="select-box" style="width:150px;">
+				<select class="select" name="roleid" size="1">
+					 
+				</select>
+				</span> </div>
+		</div>
+		<div class="row cl">
+			<div class="col-9 col-offset-3">
+				<input class="btn btn-primary radius" id="subbutton" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</div>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/lib/icheck/jquery.icheck.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/lib/Validform/5.3.2/Validform.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/lib/layer/2.1/layer.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.admin.js"></script> 
+<script type="text/javascript">
+$(function(){
+
+
+
+		
+	$.get(
+    	'__URL__/getCategory', //url
+    	//已发送给服务器的数据
+
+    	//回调函数
+    	function( data ){
+    		console.log(data);
+    		$('.select').html(data);
+    	},
+    	'json'
+    );
+});
+</script>
+<script type="text/javascript">
+	$('#subbutton').click(function(){
+		//username userpass roleid
+		var name = $('#user-name').val();
+		var pass = $('#user-pass').val();
+		var role = $('select option:selected').val();
+
+		$.post(
+	    	'__URL__/doUpdAdmin', //url
+	    	//已发送给服务器的数据
+	    	{username:name,userpass:pass,roleid:role},
+
+	    	//回调函数
+	    	function( data ){
+	    		console.log(data);
+	    		var index = parent.layer.getFrameIndex(window.name);
+				parent.layer.close(index);
+				
+	    	},
+	    	'json'
+	    );
+
+	    
+
+		
+	});
+</script>
+</body>
+</html>

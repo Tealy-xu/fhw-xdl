@@ -1,0 +1,97 @@
+.zhuti{
+	width: 1000px;
+	border: 1px solid #D3D3D3;
+	margin: 0 auto;
+}
+.titlebox{
+	margin: 0 auto;
+	text-align: center;
+	padding: 30px 0;
+}
+.titleh1{
+	font-size: 20px;
+	color: #191919;
+}
+.titleattr{
+	width: 900px;
+	height: 30px;
+	/*border: 1px solid #E5E5E5;*/
+	border-bottom: 1px solid #E5E5E5;
+	margin-left: 48px;
+}
+.attrtime{
+	margin-left: 80px;
+}
+.content{
+	width: 900px;
+	/*border: 1px solid #E5E5E5;*/
+	border-bottom: 1px solid #E5E5E5;
+	margin-left: 48px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+	padding-bottom: 30px;
+}
+.titlefoot{
+	width: 900px;
+	/*order: 1px solid #E5E5E5;*/
+	margin-left: 48px;
+	margin-bottom: 25px;
+}
+.titlefoot a{
+	color: #0052A6;
+}
+
+/*------------公告list------------------*/
+.listbox{
+	margin: 0 auto;
+	border: 1px solid #A8A8A8; 
+}
+.listtitle{
+	width: 980px;
+	height: 50px;
+	/*border: 1px solid #A8A8A8;*/
+	border-bottom: 2px solid #A8A8A8;
+	margin: 0 auto;
+}
+.listtitle h1{
+	font-size: 22px;
+	float: left;
+	margin-top: 15px;
+	margin-left: 5px;
+}
+.titlecount{
+	float: right;
+	margin-top: 25px;
+	margin-right: 5px;
+}
+.listli{
+	width: 960px;
+	/*border:1px dotted #A8A8A8;*/
+	border-bottom: 1px dotted #A8A8A8;
+	margin: 0 auto;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+}
+.listli span{
+	float: right;
+	margin-right: 20px;
+	color: #AFADAD;
+}
+.listfoot{
+	width: 960px;
+	/*border:1px dotted #A8A8A8;*/
+	margin: 10px auto;
+	height: 40px;
+	padding-top: 10px;
+}
+.pagelist{
+	display: block;
+	width: 30px;
+	height: 30px;
+	border:1px solid #A8A8A8;
+	float: left;
+	text-align: center;
+	line-height: 30px;
+	margin: 0 5px;
+}

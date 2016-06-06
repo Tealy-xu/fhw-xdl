@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="Content-Language" content="zh-cn">
+    <title>华为商城公告</title>
+    <meta name="description" content="网页描述">
+    <meta name="keywords" content="关键字">
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/header.css">
+    <link href="__PUBLIC__/css/common.css" type="text/css" rel="Stylesheet" />
+    <link href="__PUBLIC__/css/detail.css" type="text/css" rel="Stylesheet" />
+     
+    <link href="__PUBLIC__/css/announcement.css" type="text/css" rel="Stylesheet" />
+    <script src="__PUBLIC__/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/core.js"></script>
+</head>
+<body>
+    <include file="public/header" />
+       
+      <div class="hr20"></div>
+       
+      
+	<!-- start -->
+	 <!--主体内容! -->
+        <section id="main" class="clear">
+            <!--产品的类别导航路径-->
+            <div class="bread-crumb">
+                <a href="#"><b>首页</b></a>
+                <span>&gt;</span>
+                <a href="#">商城公告</a>
+                <!-- <a href="#">清洁用品</a>
+                <span>&gt;</span>
+                <a href="#">衣物清洁</a>
+                <span>&gt;</span>
+                <a href="#">卫新</a> -->
+                <foreach name="breaklist" item="v">
+                <span>&gt;</span>
+                <a href="#">{$v}</a>
+                </foreach>
+            </div>
+
+            <div>
+                 <div class="listbox" >
+                    <div class="listtitle" >
+                      <h1>商城公告</h1>
+                      <div class="titlecount" >共604条&nbsp;&nbsp;&nbsp;&nbsp;<span>1/61页</span></div>
+                    </div>
+                   <!-- <div class="listli" ><a href="#" >荣耀V8，如有异见，不如一见！ 5月17日10:08震撼首发！</a><span>2016-05-09&nbsp;&nbsp;20:22:58</span></div> -->
+                   <foreach name="articlelist" item="v" >
+                   <div class="listli" ><a href="__URL__/Announcement/id/{$v.id}" >{$v.title}</a><span>{$v.addtime|date='Y-m-d H:i:s',###}</span></div>
+                    </foreach>
+
+                   <!-- <div class="listfoot" >
+                     <a class="pagelist" href="javasacript:;" >&lt;</a>
+                     <a class="pagelist" href="javasacript:;" >1</a>
+                     <a class="pagelist" href="javasacript:;" >2</a>
+                     <a class="pagelist" href="javasacript:;" >3</a>
+                     <a class="pagelist" href="javasacript:;" >4</a>
+                     <a class="pagelist" href="javasacript:;" >&gt;</a>
+                   </div> -->
+                   <div class="page listfoot" >
+                     {$page}
+                   </div>
+                   <script type="text/javascript">
+                      $('.page').find('a').addClass('pagelist');
+                      $('.page').find('span').addClass('pagelist');
+                   </script>
+
+
+                 </div>
+            </div>
+
+            
+        </section>
+
+         
+
+
+
+      <div class="hr20"></div>
+       
+
+      <div style="clear:both;"></div>
+        
+      
+  <include file="public/footer" />
+  </body>
+  <script type="text/javascript">
+      $('#choose_btns a').click(function(){
+          // alert();
+          //拿样式
+          var style = $('.selected').find('img').attr('index');
+          //拿名字
+          var goodsname = $('#goodsname').text();
+          //拿商品数量
+          var num = $('#ac_num').val();
+          //拿id
+          var id = $('#goodsname').attr('index');
+          // console.log(id);
+
+          //ajax发送数据
+          $.post(
+            //请求的url
+            "{:U('shopcart/scAdd')}",
+            //需要发送的数据
+            { "style":style , "goodsname":goodsname, "num":num, "id":id },
+
+            function( data ){
+               console.log(data);
+            },
+            "json"
+          );
+
+          
+          return false;
+      });
+  </script>
+<html>

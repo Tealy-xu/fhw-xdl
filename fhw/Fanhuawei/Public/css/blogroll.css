@@ -1,0 +1,116 @@
+.blogrolllink{
+	width: 980px;
+	/*height: 200px;*/
+	/*border: 1px solid red;*/
+	margin: 0 auto;
+}
+.linkimg{
+	width: 950px;
+	height: 110px;
+	margin: 0 auto;
+	/*border: 1px solid blue;*/
+	padding-top: 30px;
+}
+
+.ulimg li{
+	float: left;
+	margin-left: 80px;
+}
+.ulimg li img{
+	width: 136px;
+	height: 44px;
+}
+.linkname{
+	width: 950px;
+	/*height: 70px;*/
+	margin:0 auto;
+	/*border: 1px solid red;*/
+	overflow: hidden;
+}
+.linkname ul{
+	display: inline-block;
+	margin-bottom: 40px;
+}
+.linkname ul li{
+	float: left;
+	margin-left: 70px;
+	font-size: 14px;
+	margin-bottom: 7px;
+}
+.textbox{
+	width: 1208px;
+	height: 385px;
+	background: #E7E7E7;
+	 
+}
+.textinput{
+	width: 500px;
+	height: 300px;
+	float: left;
+	border: 1px solid red;
+	margin-top: 20px;
+	margin-left: 100px;
+}
+.textinput h1{
+	font-size: 18px;
+	color: black;
+}
+.textinput span{
+	font-size: 14px;
+	margin-left: 30px;
+	color: black;
+	text-align: right;
+}
+.textinput label{
+	margin-left: 5px;
+	color: red;
+	text-align: right;
+
+	/*float: right;*/
+	 
+}
+.xianshi{
+	display: none;
+}
+.textstyle{
+	width: 300px;
+	height: 40px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+.linkbth{
+	width: 100px;
+	height: 30px;
+	margin-left: 110px;
+	background: #AD0000;
+	color: #FFFFFF;
+}
+.textlist{
+	float: right;
+	width: 450px;
+	height: 300px;
+	/*border: 1px solid red;*/
+	margin-right: 90px;
+	margin-top: 20px;
+	background: #D5D5D5;
+}
+.textlist h1{
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: 14px;
+	color: black;
+	margin-bottom: 10px;
+}
+.textlist ul{
+	display: inline-block;
+	margin-left: 20px;
+}
+.textlist li{
+	width: 400px;
+	margin-top: 10px;
+}
+.listyle{
+	display: inline-block;
+	margin-top: 30px;
+}

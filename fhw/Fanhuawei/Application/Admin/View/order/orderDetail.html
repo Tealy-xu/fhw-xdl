@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="__PUBLIC__/css/person/ec.core.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/person/main.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/lib/Hui-iconfont/1.0.7/iconfont.css" rel="stylesheet" type="text/css" />
+<style>
+.orderdetail {
+  background: transparent url(__PUBLIC__/Images/orderdetail.png) scroll no-repeat;
+  width: 114px;
+  height: 55px;
+  margin: 5px 0 1px 1px;
+
+}
+#list-pager .current{
+  border:1px solid #ccc;
+  display:inline-block;
+  width:7px;
+  height:16px;
+  font-weight:400;
+  text-align:center;
+  line-height:16px;
+    font-size:12px;
+  padding:0 5px;
+  background:#D2D2D2;
+  margin-left:5px;
+  margin-right:5px;
+}
+#list-pager .num{
+    border:1px solid #ccc;
+  display:inline-block;
+  width:7px;
+  height:16px;
+  font-weight:400;
+  text-align:center;
+  line-height:16px;
+    font-size:12px;
+  padding:0 5px;
+  
+  margin-left:5px;
+  margin-right:5px;
+
+}
+#list-pager .prev{
+    border:1px solid #ccc;
+  display:inline-block;
+  width:7px;
+  height:16px;
+  font-weight:400;
+  text-align:center;
+  line-height:16px;
+    font-size:9px;
+  padding-left:3px;
+  padding-right:5px;
+  
+  margin-left:5px;
+  margin-right:5px;
+}
+
+#list-pager .next{
+    border:1px solid #ccc;
+  display:inline-block;
+  width:7px;
+  height:16px;
+  text-align:center;
+  line-height:16px;
+    font-size:9px;
+  padding-left:3px;
+  padding-right:5px;
+  
+  margin-left:5px;
+  margin-right:5px;
+
+
+}
+</style>
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]--><title>订单详情</title>
+</head>
+<body>
+<div>
+    <div class="fl u-4-5"><!--栏目 -->
+<div class="part-area clearfix">
+    <div class="fl">
+        <h2 class="orderdetail"></h2>        
+     </div>
+    </div>
+
+<div class="hr-3"></div>
+<!--我的订单 -->
+<div class="myOrders-area">
+  <div class="myOrders-title-area">
+        <div class="h clearfix">
+            <div class="fl">
+                <div class="h-tab">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="b">
+            <table border="0" cellpadding="0" cellspacing="0" id="order-list-head">
+                <thead>
+                    <tr>
+                        <th>商品信息</th>
+                        <th>单价</th>
+                        <th>数量</th>
+                        <th class="tr-span-4">实付款<em>/元</em></th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="hr-2"></div>
+    <!-------------------以上为订单头部---------------------------------->
+    <div id="myOrders-list-content">
+        <div class="myOrders-list">
+    
+      
+      
+    
+      
+      <!--我的订单-订单-套餐 -->
+   <volist name="list" id="vo">
+      <div class="myOrders-pro-area">
+          <div class="h clearfix">
+                <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="tal">
+                              商品名称：<a href="javascript:void(0)" title="{$vo.0.intro}" onclick="orderdetail_show()">{$vo.0.name}</a>
+                              &nbsp;&nbsp;&nbsp;&nbsp;
+                              
+                
+                            </td>
+                          <!--   <td class="tr-span-4">
+                <em>
+                    <if condition="$vo['state'] eq '0'">未付款</if>
+                </em>
+              </td> -->
+                        </tr>
+                  </tbody>
+                </table>  
+            </div>
+            <div class="b">
+              <table border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+
+            
+            
+                        <!-- 组合套餐列表 -->
+
+            <!-- 普通商品列表 -->
+          
+                         <tr>
+                            <td class="tal">
+                                <div class="pro-area clearfix">
+                                    <p class="p-img">
+                                      <a title="{$vo.0.name}" href="{:U('Product/index',array('g'=>$vo['0']['id']))}" target="_blank">
+                                      <img alt="{$vo['0']['name']}" src="__PUBLIC__{$vo.0.image1}">
+                                        
+                                      </a>
+                                    </p>
+                                    <p class="p-name">
+                                      <a title="{$vo.goods.name}" target="_blank" href="{:U('Product/index',array('g'=>$vo['0']['id']))}">{$vo.style}</a>
+                                    </p>
+                                    
+                                </div>
+                            </td>
+              <td class="tr-span-9">¥{$vo.0.price}</td>
+                            <td class="tr-span-5">{$vo.num}</td>                       
+
+
+                <td rowspan="2" class="tr-span-5">
+                  <p>¥{$vo.subtotal}</p>
+                </td>
+                            
+              <!-- 
+                <td rowspan="2" class="tr-span-4 operate">
+                    <if condition="$state eq '0'">
+                        未付款
+                        <elseif condition="$state eq '1'" />
+                        已付款
+                    <elseif condition="$state eq '2'" />
+                        正在发货中
+                       <! <input type="hidden" value="{$oid}"/> -->
+                         <!-- <a href="javascript:void(0);" class="recOreder">确认收货</a> -->
+                         
+                    <!-- <elseif condition="$state eq '3'"  />
+                       <input type="hidden" value="{$vo.order_id}"/>
+                        <a href="{:U('OrderCenter/comment',array('order_id'=>$vo['order_id']))}" >去评价</a>
+                    <elseif condition="$state eq '4'" />
+                           已评价
+                    <elseif condition="$state eq '5'" />
+                           交易完成
+                      <else/>
+                    </if>
+                    
+                </td> -->
+               
+              
+
+                        </tr>
+                       
+                        
+                        
+                        
+                        
+             <!-- 普通商品列表 end -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+     </volist>
+     
+    
+    
+    
+  
+        </div>
+        
+    </div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.admin.js"></script>
+</body>
+</html>

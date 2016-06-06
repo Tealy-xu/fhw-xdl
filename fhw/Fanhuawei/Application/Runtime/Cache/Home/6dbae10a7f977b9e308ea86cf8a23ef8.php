@@ -1,0 +1,302 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>商品评价_个人中心_华为商城</title>
+<link rel="shortcut icon" href="/lamp/Fanhuawei/Public/Ico/favicon.ico">
+<link href="/lamp/Fanhuawei/Public/Css/person/ec.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/lamp/Fanhuawei/Public/lib/jquery/1.9.1/jquery.min.js"></script> 
+<link href="/lamp/Fanhuawei/Public/Css/person/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="/lamp/Fanhuawei/Public/css/dropzone.css">
+<script type="text/javascript" src="/lamp/Fanhuawei/Public/js/dropzone.js"></script>
+
+
+<style type="text/css">
+#commodity-list-head .current{
+	border:1px solid #ccc;
+	display:inline-block;
+	width:7px;
+	height:16px;
+	font-weight:400;
+	text-align:center;
+	line-height:16px;
+    font-size:12px;
+	padding:0 5px;
+	background:#D2D2D2;
+	margin-left:5px;
+	margin-right:5px;
+}
+#commodity-list-head .num{
+    border:1px solid #ccc;
+	display:inline-block;
+	width:7px;
+	height:16px;
+	font-weight:400;
+	text-align:center;
+	line-height:16px;
+    font-size:12px;
+	padding:0 5px;
+	
+	margin-left:5px;
+	margin-right:5px;
+
+}
+#commodity-list-head .prev{
+    border:1px solid #ccc;
+	display:inline-block;
+	width:7px;
+	height:16px;
+	font-weight:400;
+	text-align:center;
+	line-height:16px;
+    font-size:9px;
+	padding-left:3px;
+	padding-right:5px;
+	
+	margin-left:5px;
+	margin-right:5px;
+}
+
+#commodity-list-head .next{
+    border:1px solid #ccc;
+	display:inline-block;
+	width:7px;
+	height:16px;
+	text-align:center;
+	line-height:16px;
+    font-size:9px;
+	padding-left:3px;
+	padding-right:5px;
+	
+	margin-left:5px;
+	margin-right:5px;
+
+
+}
+
+.commentbox{
+	width: 700px;
+	border:1px solid #C0C0C0;
+	margin: 0px auto;
+	overflow: hidden;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+.comimg{
+	/*border: 1px solid blue;*/
+	border:1px solid #C0C0C0;
+	float: left;
+}
+.comimg img{
+	width: 200px;
+	height: 100px;
+}
+.comtitle{
+	float: left;
+}
+.comtitle h1{
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: 18px;
+}
+.comtitle h2{
+	margin-left: 10px;
+	font-size: 12px;
+}
+.commenttext{
+	width: 670px;
+	/*border:1px solid #C0C0C0;*/
+	margin: 0px auto;
+	overflow: hidden;
+	padding-left: 0px;
+	margin-top: 20px;
+}
+ 
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<script src="/lamp/Fanhuawei/Public/Js/base.js"></script>
+
+
+
+<div class="hr-10"></div>
+<div class="g">
+	<!--面包屑 -->
+	<div class="breadcrumb-area icon-breadcrumb fcn">您现在的位置：
+		<a href="<?php echo U('Index/index');?>" title="首页">首页</a>&nbsp;&gt;&nbsp;
+		<span id="personCenter"><a href="<?php echo U('Member/index');?>" title="个人中心">个人中心</a></span>
+		<span id="pathPoint">&nbsp;&gt;&nbsp;</span>
+		<b id="pathTitle">商品评价</b>
+	</div>
+</div>
+<div class="hr-15"></div>
+
+<div class="g">
+    <div class="fl u-4-5"><!--栏目 -->
+<div class="part-area clearfix">
+    <div class="fl">
+        <h3 class="ce-title"><span>商品评价</span></h3>
+    </div>
+</div>
+<div class="hr-2"></div>
+<!--商品评价 -->
+<div class="ce-list">
+	<div class="myOrders-title-area">
+        <div class="h clearfix">
+            <div class="fl">
+                <div class="h-tab">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="">
+             <div class="commentbox" >
+             	<div>
+             		<div class="comimg" ><img src="/lamp/Fanhuawei/Public/<?php echo ($ginfo["srcimg"]); ?>"></div>
+             		<div class="comtitle" >
+             			<h2><?php echo ($ginfo["goodsname"]); ?>&nbsp;&nbsp;<?php echo ($ginfo["style"]); ?></h2><br>
+             			<h2>数量&nbsp;x<?php echo ($ginfo["num"]); ?></h2>
+             			<h2>总价&nbsp;<?php echo ($ginfo["subtotal"]); ?></h2>
+             		</div>
+             	</div>
+             	
+             </div>
+
+             <div class="commenttext" >
+             	<form id="form-article-add" action="/lamp/Fanhuawei/index.php/Home/Comment/doAddComment" method="post" >
+             		<input type="hidden" name="odid" value="<?php echo ($ginfo["odid"]); ?>">
+             		<input type="hidden" name="gid" value="<?php echo ($ginfo["gid"]); ?>">
+             	 
+             		<input type="hidden" name="oid" value="<?php echo ($ginfo["oid"]); ?>">
+             		<div class="dropzone"></div>
+             		<br><br>
+             		 <textarea name="content" rows="6" cols="80"></textarea>
+             		<br/>
+             		<input type="radio" name="grade" value="5" >非常满意&nbsp;&nbsp;
+             		<input type="radio" name="grade" value="4" >满意&nbsp;&nbsp;
+             		<input type="radio" name="grade" value="3" >一般&nbsp;&nbsp;
+             		<input type="radio" name="grade" value="2" >良好&nbsp;&nbsp;
+             		<input type="radio" name="grade" value="1" >很差&nbsp;&nbsp;
+             		<input type="submit" value="" style="margin-left:400px;" class="button-action-ok-2 vam" >
+             	</form>
+             </div>
+        </div>
+    </div>
+
+    
+
+	<!--空数据-商品评价 -->
+	<!-- <div style="display: block;" id="commodity-list-empty" class="ce-empty-area">
+		 
+	</div> -->
+	
+	
+</div>
+<div class="hr-25"></div>
+<!--分页 -->
+ 
+</div>
+	
+</div>
+<div class="hr-60"></div>
+
+
+
+
+
+</div>
+	
+</div>
+<div class="hr-60"></div>
+
+<!--口号-20121025 -->
+ <script type="text/javascript">
+			Dropzone.autoDiscover = false;//防止报"Dropzone already attached."的错误
+            
+             var dropz = new Dropzone(".dropzone", {
+
+                //负责上传的服务器地址
+                url: "/lamp/Fanhuawei/index.php/Home/Comment/up/",
+
+                //最大上传数
+                maxFiles: 10,
+                paramName: "pic",
+
+                //文件的大小
+                maxFilesize: 512,
+
+                dictDefaultMessage:'上传图片',
+
+                dictRemoveFile:'delete file',
+
+                //显示删除按钮
+                addRemoveLinks:true,
+
+                //允许上传类型
+                acceptedFiles: "image/*",
+
+                //监听
+                init: function() {
+
+                    //监听到文件添加的时候，
+                    this.on("success", function(file,res) {
+                        
+                    	 $(file).attr('img',res.fileName);
+                        //当文件上传成功的时候，将图片放到表单隐藏域
+
+                        console.log(res.fileName);
+                        console.log(res);
+                        
+                        //创建隐藏域
+                        var input = '<input type="hidden" class="'+file.name+'" name="img[]" value="'+res.fileName+'">';
+
+                         
+
+                        //放到form表单
+                        $('#form-article-add').append(input);
+                        
+                    });
+
+                    //监听删除
+                    this.on("removedfile", function(file) {
+                        
+
+                        console.log(file);
+                        console.log(file.img);
+                        
+                        $('input[class="'+file.name+'"]').remove();
+
+                        $.get(
+					    	'/lamp/Fanhuawei/index.php/Home/Comment/delImg', //url
+					    	//已发送给服务器的数据
+					    	{url:file.img},
+
+					    	//回调函数
+					    	function( data ){
+					    	    if(data =='1'){
+		                            console.log('成功');
+		                        }else{
+		                            console.log('失败');
+		                        }
+					    	},
+					    	'text'
+					    );
+                        
+                    });
+                }
+            });
+
+ </script>
+</body></html>

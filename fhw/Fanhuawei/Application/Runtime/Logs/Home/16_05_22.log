@@ -1,0 +1,1968 @@
+[ 2016-05-22T18:00:57+08:00 ] ::1 /lamp/Fanhuawei/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\IndexController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-22T18:00:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:00:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T18:00:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+
+[ 2016-05-22T18:00:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:00:58+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: user_id D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 69 行.
+NOTIC: [8] Undefined variable: user_name D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 70 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:07+08:00 ] ::1 /lamp/Fanhuawei/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\IndexController.class.php 第 9 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 77 行.
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid= ) 
+
+[ 2016-05-22T18:01:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-22T18:01:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: user_info D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 59 行.
+NOTIC: [8] Undefined variable: user_id D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 69 行.
+NOTIC: [8] Undefined variable: user_name D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 70 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:08+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: url D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\5b6adcb62ad2b5dfc2abc2cd5e11dc99.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:09+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Login/verify.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:11+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Login/verify.html?0.14150613616468366
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:12+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Login/verify.html?0.14150613616468366?0.20451387378028407
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:18+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Login/checkVerify.html?code=tmqb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Login/remoteLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_users` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_users` WHERE `username` = 'goubi02'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_users` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`avatar` FROM `fhw_users` WHERE `username` = 'goubi02'  [ RunTime:0.0010s ]
+SQL: SELECT `userpass` FROM `fhw_users` WHERE `username` = 'goubi02' LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: userid D:\wamp\www\lamp\Fanhuawei\Application\Home\Model\UsersModel.class.php 第 40 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+SQL: SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid=26 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: totalprice D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:20+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T18:01:22+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:22+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:22+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0020s ]
+SQL: SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid=26 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: totalprice D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:22+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:22+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Member/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_users` [ RunTime:0.0020s ]
+SQL: SELECT `user_points`,`username`,`avatar`,`balance` FROM `fhw_users` WHERE `id` = 26  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user_level D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9cff28d567ef96c8840225673c0370c1.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:22+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:22+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:01:23+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Email/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\EmailController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\EmailController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `fhw_message` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_message` WHERE `recid` = 26 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_message` WHERE `recid` = 26 ORDER BY pdate desc,statue LIMIT 0,5   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: order_no D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\7382c62cdd2130cce2445b09cd699504.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:01:26+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE ( uid=26 and status=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE ( uid=26 and status=3 ) ORDER BY id desc LIMIT 0,6   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_comment` [ RunTime:0.0020s ]
+SQL: SELECT `grade` FROM `fhw_comment` WHERE `odid` = 153  [ RunTime:0.0010s ]
+SQL: SELECT `grade` FROM `fhw_comment` WHERE `odid` = 39  [ RunTime:0.0010s ]
+SQL: SELECT `grade` FROM `fhw_comment` WHERE `odid` = 34  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:04:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`state` FROM `fhw_orders` WHERE ( uid=26 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: show D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:05:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`state` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: show D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 37 行.
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 38 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:08:42+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: show D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:08:52+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: show D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 45 行.
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 46 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T18:09:17+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: show D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:09:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: show D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 46 行.
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 47 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:10:34+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `fhw_orderdetail` WHERE ( id=17,90,91,92 ) 
+ERR: 1241:Operand should contain 1 column(s)
+ [ SQL语句 ] : SELECT * FROM `fhw_orderdetail` WHERE ( id=17,90,91,92 ) 
+
+[ 2016-05-22T18:11:06+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `id` IN ('17','90','91','92')  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: commentlist D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 133 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T18:11:48+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92')  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: commentlist D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 133 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 163 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:14:46+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92')  [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: show D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 51 行.
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 52 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:15:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92')  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: odlist D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 54 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:16:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: od D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 58 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:16:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 3,3   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: od D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 58 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:16:41+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: od D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 58 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:16:43+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 3,3   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: od D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\CommentController.class.php 第 58 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:17:07+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,3   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:17:24+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:17:52+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:18:29+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T18:18:42+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`state` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-22T18:18:57+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`state` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:03+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/addComment/odid/167/num/1/gid/6/subtotal/2388.00/style/%E9%BB%91%E8%89%B2%E5%B0%96%E5%B0%BE%E7%9C%9F%E7%9A%AE%E8%A1%A8%E5%B8%A6/odid/167
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0020s ]
+SQL: SELECT `name`,`image1` FROM `fhw_goods` WHERE ( id=6 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: oid D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\6dbae10a7f977b9e308ea86cf8a23ef8.php 第 182 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:23+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/up/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2016-05-22T18:19:30+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/doAddComment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_comment` [ RunTime:0.0030s ]
+SQL: INSERT INTO `fhw_comment` (`odid`,`gid`,`oid`,`content`,`grade`,`uid`,`addtime`,`status`) VALUES ('167','6','0','一般','3','26','1463912370','1') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_commentimg` [ RunTime:0.0020s ]
+SQL: INSERT INTO `fhw_commentimg` (`img`,`uid`,`odid`,`gid`,`cid`) VALUES ('/2016-05-22/574187abad243.jpg','26','167','6','61') [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0020s ]
+SQL: UPDATE `fhw_orderdetail` SET `status`='2' WHERE `id` = 167 [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:31+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`state` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:35+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/catelist/catelist/cid/10.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( id=10 )  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( pid=10 ) ORDER BY id asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_goods` WHERE `cateid` IN ('11','12','13') ORDER BY id asc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0050s ]
+SQL: SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid=26 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: totalprice D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T18:19:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.036002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037002s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-05-22T18:19:36+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/catelist/catelist/cid/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( id=15 )  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( pid=15 ) ORDER BY id asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_goods` WHERE `cateid` IN ('16','17') ORDER BY id asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+SQL: SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid=26 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: totalprice D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:37+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/detail/particulars/goods_id/6.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0040s ]
+SQL: SELECT `id`,`name`,`price`,`intro`,`addtime`,`stock`,`image1`,`editorValue` FROM `fhw_goods` WHERE `id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_attrvalue` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_attrvalue` WHERE `gid` = 6 AND `attrid` = 1  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_attrvalue` WHERE `gid` = 6 AND `attrid` = 2  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_goods` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`name`,`cateid`,`intro` FROM `fhw_goods` WHERE `id` = 6  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_paraattr` [ RunTime:0.0030s ]
+SQL: SELECT `pid` FROM `fhw_paraattr` WHERE `cid` = 17  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_paracate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_paracate` WHERE `id` IN ('1','2','3')  [ RunTime:0.0010s ]
+SQL: SELECT `attr` FROM `fhw_paraattr` WHERE `cid` = 17  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `fhw_paracate` WHERE `id` IN ('9','10','11','15','16','17','18','27')  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_parapart` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_parapart` WHERE `goodsid` = 6  [ RunTime:0.0010s ]
+SQL: SELECT `cateid` FROM `fhw_goods` WHERE `id` = 6  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`catename`,`pid` FROM `fhw_categorys` WHERE ( id=17 )  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`catename`,`pid` FROM `fhw_categorys` WHERE ( id=15 )  [ RunTime:0.0020s ]
+SQL: SELECT `id`,`catename`,`pid` FROM `fhw_categorys` WHERE `catename` = '手环/手表'  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE ( pid=17 )  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`price`,`image1` FROM `fhw_goods` LIMIT 4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_comment` [ RunTime:0.0040s ]
+SQL: SELECT fhw_comment.id,`odid`,`uid`,`gid`,`content`,`addtime`,`grade`,`username`,`avatar` FROM `fhw_comment` INNER JOIN fhw_users ON fhw_comment.uid = fhw_users.id  WHERE `gid` = '6' AND `pid` = 0 AND `del` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_commentimg` [ RunTime:0.0030s ]
+SQL: SELECT `img`,`gid`,`cid` FROM `fhw_commentimg` WHERE `gid` = 6  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_comment` WHERE `gid` = 6 AND `status` = 2  [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: val D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\d4f47c2eb49470312d544b9f3dc764a1.php 第 405 行.
+NOTIC: [8] Undefined index: val D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\d4f47c2eb49470312d544b9f3dc764a1.php 第 405 行.
+NOTIC: [8] Undefined index: val D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\d4f47c2eb49470312d544b9f3dc764a1.php 第 405 行.
+NOTIC: [8] Undefined index: val D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\d4f47c2eb49470312d544b9f3dc764a1.php 第 405 行.
+NOTIC: [8] Undefined index: val D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\d4f47c2eb49470312d544b9f3dc764a1.php 第 405 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\d4f47c2eb49470312d544b9f3dc764a1.php 第 767 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\d4f47c2eb49470312d544b9f3dc764a1.php 第 767 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0040s ]
+SQL: SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid=26 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: totalprice D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:19:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-05-22T18:19:39+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:19:40+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-05-22T18:20:53+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/member/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:20:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/smallSC.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_shopcar` [ RunTime:0.0040s ]
+SQL: SELECT gd.id,gd.image1,gd.intro,gd.price,sc.style,sc.subtotal,sc.num,sc.goodsname FROM fhw_shopcar sc,fhw_goods gd WHERE ( sc.gid=gd.id and sc.uid=26 )  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: totalprice D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\PublicController.class.php 第 89 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:20:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/header.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-10' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-15' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-19' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-23' LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-30' LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `path` LIKE '0-35' LIMIT 3   [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T18:20:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/links.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_blogro` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_blogro`  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:20:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:20:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/public/naver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_categorys` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_categorys` WHERE `pid` = 0 ORDER BY id  [ RunTime:0.0020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:20:54+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Member/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_users` [ RunTime:0.0040s ]
+SQL: SELECT `user_points`,`username`,`avatar`,`balance` FROM `fhw_users` WHERE `id` = 26  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: user_level D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9cff28d567ef96c8840225673c0370c1.php 第 26 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:20:55+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/OrderCenter/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Controller\OrderCenterController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\OrderCenterController.class.php 第 64 行.
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orders` WHERE ( uid=26 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0020s ]
+SQL: SELECT orders.id,orders.ordernum,orders.totalprice,orders.addtime,orders.state,postinfo.area,postinfo.detail FROM fhw_orders orders,fhw_postinfo postinfo WHERE ( orders.uid=26 and postinfo.id=orders.pid ) ORDER BY addtime desc,state LIMIT 0,5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: order_no D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 143 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: order_no D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 143 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: order_no D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 143 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: order_no D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 143 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: order_no D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 143 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 180 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 181 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Undefined index: goods D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 186 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9ab3724ffc44b9ca08acc3a13e68a804.php 第 301 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:21:01+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/PersonCenter/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_users` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username`,`email`,`regtime`,`avatar` FROM `fhw_users` WHERE `username` = 'goubi02'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_userdetail` [ RunTime:0.0030s ]
+SQL: SELECT `sex`,`name` FROM `fhw_userdetail` WHERE `uid` = 26  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:21:02+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/PersonCenter/pwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:21:03+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/PersonCenter/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_users` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`username`,`email`,`regtime`,`avatar` FROM `fhw_users` WHERE `username` = 'goubi02'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_userdetail` [ RunTime:0.0020s ]
+SQL: SELECT `sex`,`name` FROM `fhw_userdetail` WHERE `uid` = 26  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-05-22T18:21:04+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/PersonCenter/address.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fhw_postinfo` [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `fhw_postinfo` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `fhw_postinfo` WHERE ( uid=26 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: address_lock D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\4dcfd7ddf8e60d08008ba41a1b9ed3cb.php 第 38 行.
+NOTIC: [8] Undefined index: address_lock D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\4dcfd7ddf8e60d08008ba41a1b9ed3cb.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:21:09+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`state` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:21:10+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Email/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\EmailController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\EmailController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `fhw_message` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_message` WHERE `recid` = 26 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_message` WHERE `recid` = 26 ORDER BY pdate desc,statue LIMIT 0,5   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: order_no D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\7382c62cdd2130cce2445b09cd699504.php 第 143 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-05-22T18:21:14+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Email/show.html?eid=5&state=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Controller\EmailController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\wamp\www\lamp\Fanhuawei\Application\Home\Controller\EmailController.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `fhw_message` [ RunTime:0.0030s ]
+SQL: SELECT `message`,`title` FROM `fhw_message` WHERE `id` = 5  [ RunTime:0.0010s ]
+SQL: UPDATE `fhw_message` SET `statue`='1' WHERE `id` = 5 [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-05-22T18:21:16+08:00 ] ::1 /lamp/Fanhuawei/index.php/Home/Comment/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fhw_orders` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`state` FROM `fhw_orders` WHERE ( uid=26 and state=4 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `fhw_orderdetail` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `fhw_orderdetail` WHERE `oid` IN ('17','90','91','92') ORDER BY id desc LIMIT 0,6   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/pinkheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/searchheader.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+NOTIC: [2] file_get_contents(./Application/Home/View/Public/naver.html): failed to open stream: No such file or directory D:\wamp\www\lamp\Fanhuawei\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+NOTIC: [8] Undefined index: grade D:\wamp\www\lamp\Fanhuawei\Application\Runtime\Cache\Home\9bada13f8d65fe468b3b3610ce95bf98.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

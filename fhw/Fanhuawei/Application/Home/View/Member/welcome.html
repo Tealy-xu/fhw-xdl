@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="__PUBLIC__/css/ec.core.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/mainn.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.min.css">
+<script src="__PUBLIC__/css/jsapi.js" namespace="ec"></script>
+<script src="__PUBLIC__/Js/ec.core.js"></script> 
+<script src="__PUBLIC__/Js/ec.business.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.10.2.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/lib/layer/layer/layer.js"></script>
+<meta charset="utf-8">
+<title>首页</title>
+</head>
+<body>
+ <div class="fr u-4-5"><!--个人中心 -->
+<div class="ic-area">
+	<div class="ic-detail-area">
+		<img src="__PUBLIC__/{$val.avatar}" width="100px" height="100px" style="position:absolute;top:1px">
+		<div class="h">
+
+			<h3><b>
+				{$val.username}
+				</b>
+				<em class="vip-state">
+					<a href="javascript:void(0)" title="VMALL 会员"><i class="{$user_level}">
+					</i></a>
+				
+				</em>
+				<b>欢迎您！</b>
+			</h3>
+			<div class="ic-detail-area">
+				<table border="0" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<th>我的积分：</th>
+							<td>
+								<a href="javascript:void(0);" class="red"><b>{$val.user_points}</b></a>
+							</td>
+							<th>我的余额：</th>
+							<td><a href="javascript:void(0);" class="red"><b>{$val.balance}</b></a><a href="javascript:;" id="recharge">充值</a>
+						</td>
+						</tr>
+						<tr>
+							<th>我的特权：</th>
+							<td>
+								<div class="ic-user-privilege">
+						    			<a href="javascript:void(0);" title="“V”字身份标识：获得与Vmall会员等级对应的“V”身份标识"><img src="__PUBLIC__/images/icon_privilege_vip_large_light.png" alt="“V”字身份高亮显示"></a>
+						    			<a href="javascript:void(0)" title="会员日活动参与权：有权参与专属的会员日活动"><img src="__PUBLIC__/images/icon_privilege_vipDay_large_gray.png" alt="会员日活动参与权"></a>
+									
+								</div></td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="b">
+			<div class="form-detail-area">
+				<table border="0" cellpadding="0" cellspacing="0">
+					<tbody>
+						<tr>
+							<th style=" width:100px;">订单中心:</th>
+							<td>
+								<a href="{:U('OrderCenter/index')}">处理中的订单（<b>{$order_handle.order_count|default=0}</b>）</a>
+								<a id="member_index_notRemarkCount" href="{:U('OrderCenter/index')}">待评价的商品（<b id="member-notRemarkCount">{$order_handle.comment_goods_count|default=0}</b>）</a>
+							</td>
+						</tr>
+						
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="hr-70"></div>
+	
+</div>
+</div>
+</body>
+</html>
+<script>
+	$('#recharge').click(function(){
+		var balance = {$val.balance};
+		layer.prompt({
+			maxlength: 10,
+			shade:0,
+	  		title:'想要变得更强吗'
+		},function(val){
+			$.post(
+				'__CONTROLLER__/recharge',
+				{num:val,balance:balance},
+				function(status){
+					layer.msg('正在py交易中,请等待', {icon: 16});
+					setTimeout(function(){
+						window.location.reload();
+					},2000);
+			});
+		});
+	});
+</script>

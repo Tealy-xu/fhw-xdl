@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="lib/PIE_IE678.js"></script>
+<![endif]-->
+<link href="__PUBLIC__/css/H-ui.min.css" rel="stylesheet" type="text/css" />
+<link href="__PUBLIC__/css/H-ui.admin.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<title>回信</title>
+</head>
+<body>
+<div class="pd-20">
+		<span>For：ALL</span>
+		<div class="row cl">
+			<div>标题：<input type="text" maxlength="12"></div>
+			<div class="formControls col-9">
+				
+				<textarea name="reply" cols="100" rows="20"></textarea>
+				<input type="hidden" value="{$recid}">
+			</div>
+			<div class="col-4"> </div>
+		</div>
+		<div class="row cl">
+			<div class="col-6">
+				<input class="btn btn-primary radius" id="doReply" type="submit" value="&nbsp;&nbsp;发送&nbsp;&nbsp;">
+			</div>
+		</div>
+	</form>
+</div>
+<script type="text/javascript" src="__PUBLIC__/lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/lib/Validform/5.3.2/Validform.min.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/lib/layer/2.1/layer.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.js"></script> 
+<script type="text/javascript" src="__PUBLIC__/js/H-ui.admin.js"></script>
+<script>
+	$('#doReply').click(function(){
+		var tav = $('textarea').val();
+		var title = $('input:text').val();
+		if(tav){
+			$.ajax({
+				url:"{:U('Email/doAllEmail')}",
+				type:"POST",
+				data:{
+					'message':tav,
+					'title':title
+				},
+			success:function(){
+				alert('群发成功！');
+				}
+			})
+		}else{
+			alert('请写要群发的信息，不写请关闭');
+		}
+	})
+</script>
+</body>
+</html>

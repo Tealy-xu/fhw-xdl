@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>订单创建成功_华为商城</title>
+<link href="__PUBLIC__/pay/cart.ec.core.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/pay/cart.main.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/header.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/pay/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/lib/layer/2.1/layer.js"></script>
+</head>
+<body>
+<include file="public/header" />
+<form action="" id="pay-go-form" method="post" target="_blank" class="hide">
+	<input type="hidden" name="orderCode" value="1070054253">
+	<input type="hidden" name="paymentMethod" id="order-paymentMethod" value="">	
+	<input type="hidden" name="paymentType" id="order-paymentType" value="">
+	<input type="hidden" name="state" value="1">
+</form>
+<div class="layout" style="margin-top:50px;">
+	<!-- 20131130-订单-确认-鼠标悬停增加ClassName： order-confirm-expand -->
+    <div class="order-confirm" id="order-confirm-detail">
+		<div class="h">
+			<s class="icon-success-7"></s>
+			<h3>订单提交成功，请您尽快付款！</h3>			
+			<p>订单号：&nbsp;&nbsp;{$orderlist[0]['ordernum']}&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;付款金额（元）：&nbsp;&nbsp;<b>{$orderlist[0]['totalprice']}.00</b>&nbsp;<b>元</b></p>
+			<div class="tips">请您尽快完成支付。</div>
+		</div>
+		<div class="b">
+			<table>
+				<tbody>
+					<tr>
+						<th>订单金额：</th>
+						<td><span id="totalprice">{$orderlist[0]['totalprice']}</span> 元</td>
+					</tr>
+					
+					<tr>
+						<th>收货信息：</th>
+						<td>
+							{$orderlist[0]['area']}{$orderlist[0]['detail']}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							联系电话：{$orderlist[0]['tel']}						
+						</td>
+					</tr>
+					<tr>
+						<th>购买日期：</th>
+						<td>{$orderlist[0]['addtime']|date="Y-m-d H:i:s",###}</td>
+					</tr>
+					<tr>
+						<th>配送方式：</th>
+						<td>
+							快递应收费用&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							运费￥0.00						
+						</td>
+					</tr>
+				
+					<tr>
+						<th>订单编号：</th>
+						<td>{$orderlist[0]['ordernum']}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<input type="hidden" name="oid" value="{$oid}">
+		<input type="hidden" name="state" value="{$orderlist[0]['state']}">
+		<div class="f"><a href="javascript:;" onclick="$(&#39;#order-confirm-detail&#39;).toggleClass(&#39;order-confirm-expand&#39;)">订单详情<i></i><s></s><b></b></a></div>
+	</div><!-- 20131130-订单-确认-end -->
+	<div class="hr-15"></div>
+	<!--订单-表单-支付方式-20121012 -->
+<!--订单-表单-支付方式-20121012 -->
+<div class="order-payment" id="order-payment-mod">
+	<h3 class="title">选择支付方式</h3>
+    <div class="order-payment-list" id="order-payment-list">
+	    <dl>
+		<dd>
+			<div class="order-payment-area">
+				<div class="h"><b>账户余额支付：</b>余额支付( 其余功能正在开发，敬请期待 )</div>
+				<div class="b clearfix" id="payment-bank-list-shortcut">
+					<ul>
+						<li>
+							<div class="payment-area">
+								<input id="input-CMB-5" class="radio vam" type="radio" seed="payment_1_1" data-type="5" name="bankName-input" value="CMB">
+							<label class="vam" for="input-CMB-5">
+							    账户余额:
+								<b style="color:red">¥ <span id="balance">{$balance[0][balance]}</span></b>
+							</label>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</dd>
+	    </dl>
+		<div class="order-payment-action-area"><a class="button-sytle-5" href="javascript:;">确认支付</a></div>
+    </div>
+	<!--订单-表单-支付方式列表结束 -->
+</div>
+</div>
+<include file="public/footer" />
+</body>
+</html>
+<script>
+	// 付款按钮
+	$('.button-sytle-5').click(function(){
+		var balance = $('#balance').html();// 余额
+		var totalprice = $("#totalprice").html();  //总价
+		var oid = $('input[name=oid]').prop('value');
+		var state = $('input[name=state]').prop('value'); // 订单状态
+		if( $('#input-CMB-5').prop('checked') == true){
+			layer.confirm('确定要付款吗',{
+				time:0,
+				btn: ['确定', '取消'],
+				yes: function(index){
+					$.post(
+						"__CONTROLLER__/pay",
+						{'balance':balance,'totalprice':totalprice,'oid':oid,'state':state},
+						function(status){
+							if(status == 1){
+								layer.close(index);
+								layer.msg('支付成功', {icon: 6});
+								setTimeout(function(){
+									location.href = "{:U('member/index')}";
+								},1500);
+							}else{
+								layer.alert('余额不足，请尽快充值');
+								// setTimeout(function(){
+								// 	location.href = "{:U('member/index')}";
+								// },1500);
+							}
+						}
+					);
+				}
+			});
+		}else{
+			layer.alert('请选择支付方式');
+		}
+	});
+</script>

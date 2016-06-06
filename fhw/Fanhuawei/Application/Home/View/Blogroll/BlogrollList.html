@@ -1,0 +1,215 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="Content-Language" content="zh-cn">
+    <title>友情链接</title>
+    <meta name="description" content="网页描述">
+    <meta name="keywords" content="关键字">
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/index.min.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/header.css">
+    <link href="__PUBLIC__/css/common.css" type="text/css" rel="Stylesheet" />
+    <link href="__PUBLIC__/css/detail.css" type="text/css" rel="Stylesheet" />
+     
+    <link href="__PUBLIC__/css/announcement.css" type="text/css" rel="Stylesheet" />
+    <link href="__PUBLIC__/css/blogroll.css" type="text/css" rel="Stylesheet" />
+    <script src="__PUBLIC__/js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/core.js"></script>
+</head>
+<body>
+    <include file="public/header" />
+       
+      <div class="hr20"></div>
+       
+      
+	<!-- start -->
+	 <!--主体内容! -->
+        <section id="main" class="clear">
+            <!--产品的类别导航路径-->
+            <div class="bread-crumb">
+                <a href="#"><b>首页</b></a>
+                <span>&gt;</span>
+                <a href="#">友情链接</a>
+                <!-- <a href="#">清洁用品</a>
+                <span>&gt;</span>
+                <a href="#">衣物清洁</a>
+                <span>&gt;</span>
+                <a href="#">卫新</a> -->
+                 
+            </div>
+
+            <div>
+                 <div class="listbox" >
+                    <div class="listtitle" >
+                      <h1>友情链接</h1>
+                      <div class="titlecount" > </div>
+                    </div>
+                    
+                    <div class="blogrolllink" >
+                      <div class="linkimg" >
+                        <ul class="ulimg" >
+                          <li><img src="__PUBLIC__/images/device.jpg"></li>
+                          <li><img src="__PUBLIC__/images/fans.png"></li>
+                          <li><img src="__PUBLIC__/images/hicloud.jpg"></li>
+                          <li><img src="__PUBLIC__/images/tiantian.png"></li>
+                        </ul>
+                      </div>
+                      <div class="linkname" >
+                        <ul>
+                          <li>华为商城官网</li>
+                          <li>华为商城手机站</li>
+                          <li>华为网盘论坛</li>
+                          <li>名鞋库</li>
+                          <li>领克特</li>
+                          <li>尚品网店庆</li>
+                          <li>华为商城官网</li>
+                          <li>华为商城手机站</li>
+                          <li>华为网盘论坛</li>
+                          <li>名鞋库</li>
+                          <li>领克特</li>
+                          <li>尚品网店庆</li>
+                          <li>华为商城官网</li>
+                          <li>华为商城手机站</li>
+                          <li>华为网盘论坛</li>
+                          <li>名鞋库</li>
+                          <li>领克特</li>
+                          <li>尚品网店庆</li>
+ 
+                        </ul>
+                      </div>
+                    </div>
+      
+                    <div class="textbox" >
+                      <div class="textinput" >
+                      <form action="__URL__/addBlogroll" method="post" >
+                        <h1>友情链接申请：</h1><br>
+
+                        <span>网站名:</span><input id="name" class="textstyle" type="text" name="name"><label class="xianshi">不能为空</label><br> 
+                        <span>&nbsp;&nbsp;网&nbsp;址:</span><input id="url" class="textstyle" type="text" name="url"><label class="xianshi">网址格式不正确</label><br> 
+                        <span>&nbsp;&nbsp;邮&nbsp;箱:</span><input class="textstyle" id="email" type="text" name="email"><label class="xianshi">邮箱格式不正确</label><br> 
+                        <span>&nbsp;&nbsp;&nbsp;Q&nbsp;Q:</span><input id="qq" class="textstyle" type="text" name="qq"><label class="xianshi">QQ格式不正确</label><br> 
+                        <input type="submit" class="linkbth" value="提交" >
+                      </form>
+                      
+                      </div>
+                      <div class="textlist" >
+                        <h1>友情链接申请条件：</h1>
+                        <ul>
+                          <li>1、您的网站谷歌和百度收录在1万以上，PR值≥5，Alexa排名在1万以内；</li>
+                          <li>2、您的网站不包含盗版、黄色等不良内容；电商，手机类网站优先交换；</li>
+                          <li>3、如果您希望交换友情链接，并符合以上条件，欢迎提交申请，我们3天内会主动联系您；</li>
+                          <li>4、华为商城对友情链接合作伙伴的选择有最终决定权。</li>
+                          <span class="listyle" >如果您希望交换友情链接，并符合以上条件，欢迎联系我们！</span>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    
+
+
+                 </div>
+            </div>
+
+            
+        </section>
+
+         
+
+
+
+      <div class="hr20"></div>
+       
+
+      <div style="clear:both;"></div>
+        
+      
+  <include file="public/footer" />
+  </body>
+  <script type="text/javascript">
+      $('#choose_btns a').click(function(){
+          // alert();
+          //拿样式
+          var style = $('.selected').find('img').attr('index');
+          //拿名字
+          var goodsname = $('#goodsname').text();
+          //拿商品数量
+          var num = $('#ac_num').val();
+          //拿id
+          var id = $('#goodsname').attr('index');
+          // console.log(id);
+
+          //ajax发送数据
+          $.post(
+            //请求的url
+            "{:U('shopcart/scAdd')}",
+            //需要发送的数据
+            { "style":style , "goodsname":goodsname, "num":num, "id":id },
+
+            function( data ){
+               console.log(data);
+            },
+            "json"
+          );
+
+          
+          return false;
+      });
+  </script>
+
+<script type="text/javascript">
+  $('#name').blur(function(){
+      var value = $(this).val();
+      console.log(value);
+      if(!value){
+        console.log($(this).next());
+        $(this).next().removeClass('xianshi');
+      }else{
+        $(this).next().addClass('xianshi');
+      }
+  });
+  $('#url').blur(function(){
+    var value = $(this).val();
+    var url = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+
+    var bool = url.test(value);
+
+    console.log(bool);
+
+    if(bool){
+      $(this).next().addClass('xianshi');
+    }else{
+      $(this).next().removeClass('xianshi');
+    }
+
+  });
+
+  $('#email').blur(function(){
+     var value = $(this).val();
+     var email = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+
+     var bool = email.test(value);
+
+     if(bool){
+      $(this).next().addClass('xianshi');
+    }else{
+      $(this).next().removeClass('xianshi');
+    }
+
+  });
+
+  $('#qq').blur(function(){
+     var value = $(this).val();
+     var qq = /^\d{5,11}$/;
+
+     var bool = qq.test(value);
+
+     if(bool){
+      $(this).next().addClass('xianshi');
+    }else{
+      $(this).next().removeClass('xianshi');
+    }
+
+  });
+</script>
+<html>

@@ -1,0 +1,116 @@
+
+﻿<!DOCTYPE html>
+<!--------个人中心-------------->
+<html>
+<head><meta charset="UTF-8">
+<title>首页_个人中心_华为商城</title>
+<link href="__PUBLIC__/css/ec.core.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/css/mainn.css" rel="stylesheet" type="text/css">
+<script src="__PUBLIC__/css/jsapi.js" namespace="ec"></script>
+<script src="__PUBLIC__/Js/jquery-1.4.4.min.js"></script>
+<script src="__PUBLIC__/Js/ec.core.js"></script> 
+<script src="__PUBLIC__/Js/ec.business.js"></script> 
+<link href="__PUBLIC__/css/header.css" rel="stylesheet" type="text/css">
+
+
+
+</head>
+
+<body>
+<!--引入公共头-->
+<include file='public/header' />
+
+<script src="__PUBLIC__/Js/base.js"></script>
+
+<div class="hr-10"></div>
+<div class="g">
+	<!--面包屑 -->
+	<div class="breadcrumb-area icon-breadcrumb fcn">您现在的位置：
+		<a href="{:U('Index/index')}" title="首页">首页</a>&nbsp;&gt;&nbsp;
+		<span><b>个人中心</b></span>
+		<span id="pathPoint"></span>
+		<b id="pathTitle"></b>
+	</div>
+</div>
+<div class="hr-15"></div>
+
+<div class="g">
+    <div class="fr u-4-5"><!--个人中心 -->
+     <!--  <div id="iframe_box" class="Hui-article"> -->
+            <div style="display:none" class="loading"></div>
+            <iframe scrolling="no" width="100%" frameborder="0" src="{:U('Member/welcome')}" name='myiframe' id="external-frame" onload="setIframeHeight(this)"></iframe>
+      </div>
+	<div class="fl u-1-5">
+    	
+
+<!--左边菜单 -->
+<div class="mc-menu-area">
+	<div class="h"><a href="{:U('Member/index')}" class="button-go-mc" title="个人中心"><span>个人中心</span></a></div>
+    <div class="b">
+        <ul>
+        	<li>
+        	<h3>订单中心</h3>
+            	<ol>
+                	<li id="li-order"><a href="{:U('OrderCenter/index')}"  target="myiframe" title="我的订单"><span>我的订单</span></a></li>
+                   
+                </ol>
+            </li>
+            <li>
+            <h3>个人中心</h3>
+            	<ol>
+                	<li id="li-account"><a href="{:U('PersonCenter/index')}" target="myiframe" title="个人信息"><span>个人信息</span></a></li>
+                    <li id="li-security"><a href="{:U('PersonCenter/pwd')}" target="myiframe" title="密码管理"><span>密码管理</span></a></li>
+                    <li id="li-myAddress"><a href="{:U('PersonCenter/address')}" target="myiframe" title="收货信息"><span>收货信息</span></a></li>
+					<li id="li-enterprise" class="hide"></li>
+                </ol>
+            </li>
+            <li>
+            <h3>社区中心</h3>
+            	<ol>
+                	<li id="li-prdRemark"><a href="{:U('Comment/index')}" target="myiframe" title="商品评价"><span>商品评价</span></a></li>
+                    <li id="li-prdRemark"><a href="{:U('Email/index')}" target="myiframe" title="站内信"><span>系统信息</span></a></li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+    <div class="f"></div>
+</div>
+    </div>
+</div>
+<div class="hr-60"></div>
+
+  </div>
+<!----------------引入底部公共头---------------------------->
+<include file="Public/footer" />
+</body>
+<script>
+function setIframeHeight(iframe) {
+if (iframe) {
+var iframeWin = iframe.contentWindow || iframe.contentDocument.parentWindow;
+if (iframeWin.document.body) {
+iframe.height = iframeWin.document.documentElement.scrollHeight || iframeWin.document.body.scrollHeight;
+}
+}
+};
+
+window.onload = function () {
+setIframeHeight(document.getElementById('external-frame'));
+};
+
+</SCRIPT>
+<script>
+    $(function(){
+      $.ajax({
+        url:"{:U('Email/checkEmail')}",
+        type:"POST",
+        success:function(responseText){
+          if(responseText == 1)
+            alert('亲，您有新的消息。请去系统信息查看！');
+        }
+      })
+    })
+  </script>
+
+</script>
+</html>
+
